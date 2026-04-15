@@ -1,23 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>AfriTalent — About</title>
- <!-- Bootstrap 5 via CDN : feuille de style -->
- <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
- <!-- Votre feuille de style personnelle -->
- <link rel="stylesheet" href="css/style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>AfriTalent — About</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="Css/style.css">
 </head>
-<body>
- <!-- Le contenu de la page sera ajoute ici -->
- <!-- Bootstrap 5 via CDN : script JavaScript -->
- <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
- <!-- Votre script JavaScript -->
- <script src="js/main.js"></script>
- </body>
+
+<body class="WWW">
+   <nav class="navbar navbar-expand-lg  fixed-top">
+      <div class="container-fluid">
+         <!-- La class collapse navbar-collapse permet de faciliter le regroupage des liens de navigation sur des ecrans plus petit en menu amburgur comme les telephones -->
+         <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+               <li><a class="nav-link " href="index.html">Accueil</a></li>
+               <li><a class="nav-link" href="freelances.html">Freelances</a></li>
+               <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+               <li><a class="nav-link" href="about.html">A propos</a></li>
+               <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <a href="" class="btn btn-primary ms-lg-3">Rejoindre AfriTalent</a>
+         </div>
+      </div>
+   </nav>
+
+   <section class="mt-5 pt-5">
+      <div class="container py-5">
+         <div class="row align-items-center mb-5 pb-5">
+            <div class="col-md-6">
+               <h2 class="display-5 fw-bold mb-4">Notre Histoire</h2>
+               <p class="fw-bold">Né au Sénégal en 2011, AfriTalent a pour mission de briser les frontières
+                  géographiques
+                  pour
+                  le talent tech africain.</p>
+               <p class="text-muted">Nous croyons que l'Afrique est le futur de la technologie mondiale. Notre
+                  plateforme offre une infrastructure de confiance pour les échanges commerciaux numériques.</p>
+            </div>
+            <div class="col-md-6">
+               <img src="Images/Acceuill.jpg" alt="" width="600px" height="350px" class="rounded-4" id="Notre">
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="container my-5">
+      <h2 class="text-center mb-5">Nos Valeurs</h2>
+
+      <div class="row g-4 text-center">
+
+         <div class="col-md-6 col-lg-3">
+            <div class="card h-100 rounded-4">
+               <div class="card-body">
+                  <div class="mb-3">
+                     <i class="fas fa-lightbulb fa-3x text-primary"></i>
+                  </div>
+                  <h5 class="card-title">Innovation</h5>
+                  <p class="card-text text-muted">Repousser les limites du possible chaque jour.</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-6 col-lg-3">
+            <div class="card h-100 rounded-4">
+               <div class="card-body">
+                  <div class="mb-3">
+                     <i class="fas fa-universal-access fa-3x text-primary"></i>
+                  </div>
+                  <h5 class="card-title">Accessibilité</h5>
+                  <p class="card-text text-muted">Un design inclusif pour tout le monde, partout.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-3">
+            <div class="card h-100 rounded-4">
+               <div class="card-body">
+                  <div class="mb-3">
+                     <i class="fas fa-users fa-3x text-primary"></i>
+                  </div>
+                  <h5 class="card-title">Communauté</h5>
+                  <p class="card-text text-muted">L'esprit d'équipe et le partage sont au cœur de chaque projet que nous
+                     entreprenons.</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-6 col-lg-3">
+            <div class="card h-100 rounded-4">
+               <div class="card-body">
+                  <div class="mb-3">
+                     <i class="fas fa-award fa-3x text-primary"></i>
+                  </div>
+                  <h5 class="card-title">Excellence</h5>
+                  <p class="card-text text-muted">Nous visons la plus haute qualité dans chaque détail pour garantir
+                     votre satisfaction.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="mt-5 pt-5">
+      <h2 class="text-center mt-5 mb-5">Notre Equipe</h2>
+      <div class="container my-5 ">
+         <div class="row g-5">
+            <div class="col-md-3">
+               <div class="card h-100 rounded-4">
+                  <img src="Images/Avis1.jpeg" alt="" width="242px" height="250px" class="rounded-4">
+                  <div class="card-body text-center">
+                     <h5 class="fw-bold">Papa Ibou Jackson</h5>
+                     <h5 class="text-success fw-bold">Directeur General</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="card h-100 rounded-4">
+                  <img src="Images/F6.png" alt="" width="242px" height="250px" class="rounded-4">
+                  <div class="card-body text-center">
+                     <h5 class="fw-bold">Marie Joseph Mbobutu</h5>
+                     <h5 class="text-success fw-bold">Secretaire Géneral</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="card h-100 rounded-4">
+                  <img src="Images/F9.jpeg" alt="" width="242px" height="250px" class="rounded-4">
+                  <div class="card-body text-center">
+                     <h5 class="fw-bold">Dani Lookman</h5>
+                     <h5 class="text-success fw-bold">Chef de projet digital</h5>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-3 ">
+               <div class="card h-100 rounded-4">
+                  <img src="Images/F4.png" alt="" width="242px" height="250px" class="rounded-4">
+                  <div class="card-body text-center">
+                     <h5 class="fw-bold">Josephine Ndeki</h5>
+                     <h5 class="text-success fw-bold">Directrice Financier</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Votre script JavaScript -->
+   <script src="Js/main.js"></script>
+
+</body>
+
 </html>
