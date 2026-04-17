@@ -10,12 +10,12 @@
    <link rel="stylesheet" href="Css/style.css">
 </head>
 
-<body>
+<body class="index">
    <div class="zzz">
       <header>
-         <nav class="navbar navbar-expand-lg  fixed-top">
+         <nav class="navbar navbar-expand-lg  fixed-top mb-1">
             <div class="container-fluid">
-
+               <img src="Images/AFRI.png" alt="" class="LOGO mb-1">
                <!-- La class collapse navbar-collapse permet de faciliter le regroupage des liens de navigation sur des ecrans plus petit en menu amburgur comme les telephones -->
                <div class="collapse navbar-collapse">
                   <ul class="navbar-nav ms-auto">
@@ -26,7 +26,7 @@
                      <li><a class="nav-link" href="contact.html">Contact</a></li>
 
                   </ul>
-                  <button>Rejoindre AfriTalent</a></button>
+                  <button class="buttonR"><a href="">Rejoindre AfriTalent</a></button>
                </div>
             </div>
          </nav>
@@ -35,13 +35,13 @@
       <main>
          <section class="acceuil">
             <div class="backAcceuil">
-               <div class="display-8  fw-bold text-dark">
-                  Bienvenue à AfriTalent l'Elite du Développement web en
+               <div class="display-8  fw-bold text-dark" id="texte">
+                  Bienvenue à <span class="afritalent"> AfriTalent</span> l'Elite du <br> Développement web en
                   Afrique. <br>
                   Avec <span class="afritalent"> AfriTalent</span>, on propulse vos <br> idées au niveau supérieur.
                   <div>
-                     <button>Je suis Freelance</button>
-                     <button>Je cherche un Freelance</button>
+                     <button class="button">Je suis Freelance</button>
+                     <button class="button2">Je cherche un Freelance</button>
                   </div>
                   <div class="stat">
                      <div>
@@ -68,39 +68,42 @@
       </main>
    </div>
 
-   <section class="py-5  bg-light" id="section2">
+   <section class="py-5 mb-5">
       <div class="container">
-         <h3 class="text-center fw-bold mb-2 pb-3 mt-5">Comment ça marche ?</h3>
-         <div class="row row-cols-1 row-cols-md-3 g-4" id="comment">
+         <h3 class="text-center fw-bold mb-2 pb-3 mt-5 text-light">Comment ça marche ?</h3>
+         <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
             <div class="col">
-               <div class="card h-100">
-                  <img src="Images/postuler.jpg" alt="">
+               <div class="card h-100 rounded-5" id="backcarte">
+                  <img src="Images/postuler.jpg" alt="" class="rounded-5">
                   <div class="card-body">
                      <p class="badge bg-success">1</p>
-                     <h5 class="card-title">Inscrivez-vous</h5>
-                     <p class="card-text">Crée votre profil en quelques minutes et mettez en avant vos compétences pour
-                        rejoindre la communauté <span class="text-primary">AfriTalent</span>.</p>
+                     <h5 class="card-title text-light">Inscrivez-vous</h5>
+                     <p class="card-text text-light">Crée votre profil en quelques minutes et mettez en avant vos
+                        compétences pour
+                        rejoindre la communauté <span class="text-primary fw-bold">AfriTalent</span>.</p>
                   </div>
                </div>
             </div>
             <div class="col">
-               <div class="card h-100">
-                  <img src="Images/pos2.jpg" alt="">
+               <div class="card h-100 rounded-5" id="backcarte">
+                  <img src="Images/pos2.jpg" alt="" class="rounded-5">
                   <div class="card-body">
-                     <p>2</p>
-                     <h5 class="card-title">Postuler</h5>
-                     <p class="card-text">Trouvez des missions qui correspondent à vos compétences,adaptées à votre
+                     <p class="badge bg-success">2</p>
+                     <h5 class="card-title text-light">Postuler</h5>
+                     <p class="card-text text-light">Trouvez des missions qui correspondent à vos compétences,adaptées à
+                        votre
                         profil et postulez facilement aux opportunités qui vous correspondent</p>
                   </div>
                </div>
             </div>
             <div class="col">
-               <div class="card h-100">
-                  <img src="Images/pos3.jpg" alt="">
+               <div class="card h-100 rounded-5" id="backcarte">
+                  <img src="Images/pos3.jpg" alt="" class="rounded-5">
                   <div class="card-body">
-                     <p>3</p>
-                     <h5 class="card-title">Travailler</h5>
-                     <p class="card-text">Gérez vos projets via notre interface ultra sécurisée et Collaborez avec vos
+                     <p class="badge bg-success">3</p>
+                     <h5 class="card-title text-light">Travailler</h5>
+                     <p class="card-text text-light">Gérez vos projets via notre interface ultra sécurisée et Collaborez
+                        avec vos
                         clients, gérez vos projets efficacement et développez votre activité en toute sécurité.</p>
                   </div>
                </div>
@@ -108,150 +111,154 @@
          </div>
       </div>
    </section>
+   <section class="py-5 " id="Catégories">
+      <div class="container">
+         <h2 class="text-center mb-5 pb-5 text-light">Catégories de services</h2>
+         <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+               <div class="card h-100 rounded-5" id="backcarte">
+                  <img src="Images/imageAcceuil.jpg" alt="" class="rounded-5" id="services">
+                  <div class="card-body">
+                     <h5 class="card-title text-primary fw-bold">Développement Web</h5>
+                     <p class="card-text text-light">Nous concevons des sites vitrines, des plateformes e-commerce et
+                        des applications SaaS sur mesure.</p>
+                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">78
+                           Freelances</a></button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col">
+               <div class="card h-100 rounded-5" id="backcarte">
+                  <img src="Images/Capture d'écran 2026-04-11 135808.png" alt="..." class="rounded-5" id="services">
+                  <div class="card-body">
+                     <h5 class="card-title text-primary fw-bold">Design UI/UX</h5>
+                     <p class="card-text text-light">Nous nous chargeons de créer des interfaces intuitives et
+                        captivantes qui renforcent l'identité de
+                        votre marque.</p>
+                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">100
+                           Freelances</a></button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col">
+               <div class="card h-100 rounded-5" id="backcarte">
+                  <img src="Images/digitale.png" alt="" class="rounded-5" id="services">
+                  <div class="card-body">
+                     <h5 class="card-title text-primary fw-bold"> Marketing Digital</h5>
+                     <p class="card-text text-light">De la stratégie de contenu à l'acquisition payante, nous déployons
+                        des campagnes ciblées pour maximiser votre retour sur investissement.</p>
+                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">46
+                           Freelances</a></button>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <div class="card h-100 rounded-5" id="backcarte">
+                  <img src="Images/data_ia.jpg" alt="" class="rounded-5" id="services">
+                  <div class="card-body">
+                     <h5 class="card-title text-primary fw-bold">Data & IA</h5>
+                     <p class="card-text text-light">Exploitez la puissance de vos données pour anticiper les tendances
+                        et automatiser vos processus. Nous intégrons des modèles d'IA personnalisés pour donner un temps
+                        d'avance à votre entreprise.</p>
+                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">50
+                           Freelances</a></button>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <div class="card h-100 rounded-5" id="backcarte">
+                  <img src="Images/redact.png" alt="" class="rounded-5" id="services">
+                  <div class="card-body">
+                     <h5 class="card-title text-primary fw-bold">Rédaction Tech</h5>
+                     <p class="card-text text-light"> Nous
+                        rédigeons des articles de blog, des documentations d'API et des livres blancs qui valorisent
+                        votre expertise tout en restant accessibles à vos cibles.</p>
+                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">200
+                           Freelances</a></button>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <div class="card h-100 rounded-5" id="backcarte">
+                  <img src="Images/devops.png" alt="" class="rounded-5" id="services">
+                  <div class="card-body">
+                     <h5 class="card-title text-primary fw-bold">DevOps & Cloud</h5>
+                     <p class="card-text text-light">Accélérez vos cycles de déploiement et garantissez la haute
+                        disponibilité de vos services. Nous optimisons vos architectures Cloud pour réduire vos coûts et
+                        assurer une résilience totale face à la montée en charge.</p>
+                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">30
+                           Freelances</a></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </section>
 
    <section class="py-5 ">
       <div class="container">
-         <h2 class="text-center mb-5">Catégories de services</h2>
-         <div>
-            <div class="col">
-               <div class="card h-100">
-                  <img src="Images/imageAcceuil.jpg" alt="">
+         <h4 class="text-center mb-5 "><span class="border border-primary rounded-5 p-2 text-light"
+               id="temoignage mt-5 pt-5">Témoignages</span></h4>
+         <h2 class="text-center pb-3 text-light mb-5 pb-5">Ce que disent nos <span class="text-primary">Clients</span>
+         </h2>
+         <div class="row row-cols-md-3 g-4">
+            <div>
+               <div class="card p-1 rounded-5" id="backcarte">
+                  <div class="d-flex justify-content-center mt-3 ">
+                     <img src="Images/Avis1.jpeg" alt="" style="width: 100px; height: 120px;"class="rounded-5">
+                  </div>
                   <div class="card-body">
-                     <h5 class="card-title ">Développement Web</h5>
-                     <p class="card-text text-muted">Nous concevons des sites vitrines, des plateformes e-commerce et
-                        des applications SaaS sur mesure.</p>
-                     <a href="">78 Freelances</a>
+                     <h5 class="mb-1 text-light">Papa Ibou Jackson</h5>
+                     <p class=" mb-2 text-primary fw-bold">Freelance</p>
+                     <div class="mb-3 text-warning">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                     </div>
+                     <p class="text-light">En tant que gérant d'une agence marketing basée en France, je cherchais
+                        des rédacteurs web capable de comprendre le marché francophone. J'ai découvert AfriTalent et
+                        j'ai été bluffé par la réactivité des
+                        candidats.</p>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="card p-1 rounded-5"id="backcarte">
+                  <div class="d-flex justify-content-center mt-3">
+                     <img src="Images/Avis2.jpeg" alt="" style="width: 90px; height: 100px;" class="rounded-5">
+                  </div>
+                  <div class="card-body">
+                     <h5 class=" mb-1 text-light">Emile François Gomis</h5>
+                     <p class=" mb-2 text-primary fw-bold">Freelance</p>
+                     <div class=" mb-3 text-warning">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                     </div>
+                     <p class=" text-light ">Je suis développeur junior vivant à Dakar et j'avais du mal à me faire une
+                        place sur les grosses plateformes internationales comme Upwork. Sur AfriTalent, j'ai
+                        l'impression que mon profil est vraiment mis en valeur.Vraiment c'est Top </p>
                   </div>
                </div>
             </div>
 
-            <div class="col">
-               <div class="card h-100">
-                  <img src="Images/Capture d'écran 2026-04-11 135808.png" alt="...">
-                  <div class="card-body">
-                     <h5 class="card-title ">Design UI/UX</h5>
-                     <p class="card-text text-muted">Nous nous chargeons de créer des interfaces intuitives et
-                        captivantes qui renforcent l'identité de
-                        votre marque.</p>
-                     <a href="#">100 Freelances</a>
-                  </div>
+            <div class="card p-1 rounded-5" id="backcarte">
+               <div class="d-flex justify-content-center mt-3">
+                  <img src="Images/Avis3.jpeg" alt="" style="width: 80px; height: 100px;"class="rounded-5">
                </div>
-            </div>
-
-            <div class="col">
-               <div class="card h-100">
-                  <img src="Images/digitale.png" alt="">
-                  <div class="card-body">
-                     <h5 class="card-title"> Marketing Digital</h5>
-                     <p class="card-text text-muted">De la stratégie de contenu à l'acquisition payante, nous déployons
-                        des campagnes ciblées pour maximiser votre retour sur investissement.</p>
-                     <a href="#" class="btn btn-primary">300 Freelances</a>
+               <div class="card-body">
+                  <h5 class=" mb-1 text-light">Marie Ndiago</h5>
+                  <p class=" mb-2 text-primary fw-bold">Consultante RH</p>
+                  <div class="mb-3 text-warning">
+                     <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                   </div>
+                  <p class=" text-light">Consultante RH depuis 5 ans . Ce que j'apprécie, c'est le
+                     sérieux : on sent que les clients qui viennent ici cherchent de la vraie compétence et pas juste un
+                     prix bas. La plateforme est moderne, les virements sont ponctuels.</p>
                </div>
-            </div>
-            <div class="col">
-               <div class="card h-100">
-                  <img src="Images/data_ia.jpg" alt="">
-                  <div class="card-body">
-                     <h5 class="card-title ">Data & IA</h5>
-                     <p class="card-text text-muted">Exploitez la puissance de vos données pour anticiper les tendances
-                        et automatiser vos processus.</p>
-                     <a href="#">50 Freelances</a>
-                  </div>
-               </div>
-            </div>
-            <div class="col">
-               <div class="card h-100">
-                  <img src="Images/redact.png" alt="">
-                  <div class="card-body">
-                     <h5 class="card-title">Rédaction Tech</h5>
-                     <p class="card-text text-muted"> Nous
-                        rédigeons des articles de blog, des documentations d'API et des livres blancs qui valorisent
-                        votre expertise tout en restant accessibles à vos cibles.</p>
-                     <a href="#">200 Freelances</a>
-                  </div>
-               </div>
-            </div>
-            <div class="col">
-               <div class="card h-100">
-                  <img src="Images/devops.png" alt="">
-                  <div class="card-body">
-                     <h5 class="card-title ">DevOps & Cloud</h5>
-                     <p class="card-text text-muted">Accélérez vos cycles de déploiement et garantissez la haute
-                        disponibilité de vos services. Nous optimisons vos architectures Cloud dans le but de réduire
-                        vos coûts .</p>
-                     <a href="#">30 Freelances</a>
-                  </div>
-               </div>
-            </div>
-
          </div>
       </div>
    </section>
-
-   <section class="py-5 bg-light">
-      <div class="container">
-         <h2 class="text-center mb-5 ">Témoignages</h2>
-
-         <div>
-            <div class="card p-3">
-               <div class="d-flex justify-content-center mt-3">
-                  <img src="Images/Avis1.jpeg" alt="" style="width: 80px; height: 100px;">
-               </div>
-               <div class="card-body">
-                  <h5 class="mb-1">Papa Ibou Jackson</h5>
-                  <p class=" mb-2">Freelance</p>
-                  <div class="mb-3">
-                     <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                  </div>
-                  <p class="text-muted">En tant que gérant d'une agence marketing basée en France, je cherchais
-                     des rédacteurs web capable de comprendre le marché francophone. J'ai découvert AfriTalent et
-                     j'ai été bluffé par la réactivité des
-                     candidats. Le rapport qualité-prix est imbattable, mais c'est surtout le professionnalisme
-                     qui m'a marqué.</p>
-               </div>
-            </div>
-         </div>
-         <div>
-            <div class="card p-3">
-               <div class="d-flex justify-content-center mt-3">
-                  <img src="Images/Avis2.jpeg" alt="" style="width: 80px; height: 100px;">
-               </div>
-               <div class="card-body">
-                  <h5 class=" mb-1">Emile François Gomis</h5>
-                  <p class=" mb-2">Freelance</p>
-                  <div class=" mb-3">
-                     <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                  </div>
-                  <p class=" text-muted ">Je suis développeur junior à Dakar et j'avais du mal à me faire une
-                     place sur les grosses plateformes internationales comme Upwork. Sur AfriTalent, j'ai
-                     l'impression que mon profil est vraiment mis en valeur. J'ai décroché ma première mission de
-                     création de site WordPress en seulement deux semaines. </p>
-               </div>
-            </div>
-         </div>
-
-         <div class="card p-3">
-            <div class="d-flex justify-content-center mt-3">
-               <img src="Images/Avis3.jpeg" alt="" style="width: 80px; height: 100px;">
-            </div>
-            <div class="card-body">
-               <h5 class=" mb-1">Marie Ndiago</h5>
-               <p class=" mb-2">Consultante RH</p>
-               <div class="mb-3">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-               </div>
-               <p class=" text-muted">Consultante RH avec 5 ans d'expérience. Ce que j'apprécie, c'est le
-                  sérieux du filtrage : on sent que les clients qui viennent ici cherchent de la vraie
-                  compétence et pas juste un prix bas. La plateforme est moderne, les virements sont ponctuels
-                  et le support client est très humain.</p>
-            </div>
-         </div>
-      </div>
-   </section> 
    </main>
 
-   <section class="py-5" id="bbb">
+   <section class="py-5 pt-5" id="bbb">
       <div class="AAA">
          <div>
             <h2 class="text-light ms-3" id="rejoignez">

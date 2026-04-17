@@ -1,0 +1,377 @@
+
+*{
+    margin: 0
+}
+.acceuil{
+    height:100vh;
+}
+.backAcceuil{
+    display: flex;
+    justify-content: space-between;
+    padding-top:95px;
+
+
+}
+.zzz{
+    background:linear-gradient(to right,rgba(243, 245, 245, 0.836), rgba(5, 9, 248, 0.205)),url(../../../../Downloads/BACK14.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+}
+.LOGO{
+    width: 150px;
+    height: 50px;
+}
+
+.nav-link {
+    color:black;
+}
+
+#texte{
+    margin-top: 100px;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.button{
+    background: linear-gradient( rgba(9, 6, 241, 0.904), rgba(21, 34, 219, 0.897));
+    color: white;
+    border: blue;
+    padding: 15px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-family: 'Times New Roman';
+}
+.buttonR{
+    background: linear-gradient( rgba(9, 6, 241, 0.904), rgba(21, 34, 219, 0.897));
+    color: white;
+    border: blue;
+    padding: 10px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    
+    font-family: 'Times New Roman';
+}
+.button2{
+    color:blue;
+    padding: 15px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-top: 50px;
+    border-color: white;
+    margin-left: 10px;
+    font-family: 'Times New Roman';
+    background: linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0));
+}
+.ppp{
+    font-size: 20px;
+}
+.stat{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+li{
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+.afritalent{
+    color: blue;
+}
+#section2{
+    background: linear-gradient(#add8e6, #87ceeb);
+    
+}
+#comment{
+    margin-top: 50px;
+}
+
+.AAA{
+    display: flex;
+    justify-content: space-between;
+}
+.groupe{
+    opacity: 0.80;
+    border-radius: 30px;
+    margin-right: 40px;
+}
+#bbb{
+    background-color: rgba(5, 5, 5, 0.623);
+}
+#rejoignez{
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 100px;
+    font-family: 'Times New Roman';
+
+}
+
+#bt1{
+    background: linear-gradient( rgba(9, 6, 241, 0.904), rgba(21, 34, 219, 0.897));
+    color: white;
+    border: blue;
+    padding: 15px 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+   
+    
+}
+a{
+     text-decoration: none;
+     color: white;
+     
+    
+}
+#bt2{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.212);
+    color: white;
+    border: white;
+    padding: 15px 10px;
+    border-radius: 30px;
+    font-size: 20px;  
+    font-family: 'Times New Roman';
+    
+}
+
+#FR{
+    background-color:rgba(0, 0, 0, 0.527);
+}
+#botom{
+    margin-top: 120px;
+
+}
+#Notre{
+    opacity: 0.8;
+}
+
+.TARIFS{
+    background: linear-gradient(rgba(46, 12, 236, 0.295),rgba(4, 29, 253, 0.562));
+}
+/* Container principal pour centrer le formulaire */
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.taille {
+    background:white;
+    padding: 30px;
+    border-radius: 12px;
+    
+}
+
+.espace{
+    margin-bottom: 15px;
+}
+
+.AAA {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* Style des labels */
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, textarea {  
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+
+}
+
+input {
+    border-color: #007bff;
+}
+
+/* Style du bouton */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+   
+}
+li{
+    color: black;
+}
+hr{
+    color: white;
+}
+.index{
+    background:linear-gradient(135deg, #0f2027ec, #203a43, #2c5364);
+} 
+#services{
+    opacity: 0.7;
+}
+#temoignage{
+    background-color: rgba(0, 0, 255, 0.192);
+    
+}
+#backcarte{
+    background-color: #0c0c0c5b;
+}
+.carteVert{
+    color: rgba(38, 156, 38, 0.747);
+}
+#pop{
+    border-radius: 40px;
+    padding:10px 10px ;
+}
+#accordion{
+    background:linear-gradient(135deg, #0f2027ec, #203a43, #2c5364);
+}
+#contact{
+    border-radius: 30px;
+    border-color: black;
+}
+.contact{
+    width: 30%;
+}
+.hhh{
+    display: flex;
+    justify-content: space-between;
+}
+.vvv{
+    margin-bottom: 20px;
+}
+#large{
+    width: 177px;
+}
+.BtEA{
+    display: flex;
+    gap: 10px; 
+    
+}
+.btE{
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.contact{
+    margin-top: 100px;
+    width: 30%;
+}
+.hhh{
+    display: flex;
+    
+    gap: 50px;
+    justify-content: space-between;
+}
+.vvv{
+    margin-bottom: 20px;
+}
+#large{
+    width: 177px;
+}
+.navbar{
+    background: #007bff4d;
+}
+.BtEA{
+    display: flex;
+    gap: 10px; 
+    
+}
+.btE{
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.azer{
+    display: flex;
+    justify-content: space-between;
+}
+:root {
+    --primary-color: #0d6efd;      
+    --secondary-color: #2c3e50;   
+    --accent-color: #f39c12;
+    --bg-light: #f8f9fa;   
+    --error-color: #dc3545;    
+    --border-color: #e0e0e0;
+    --main-padding: 40px;
+    --border-radius: 12px;
+    --input-padding: 12px;
+    --font-titles: 'Times New Roman', Times, serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+label{
+    font-family: var(--font-titles);;
+}
+
+.dContact {
+    
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 100px;
+   
+}
+
+.contacts {
+    background:var(--bg-light);
+    max-width: 1000px;
+    gap: 150px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background:linear-gradient( #0f202710, #203a4318, #2c53640c);
+
+}
+
+
+.contact-form {
+    padding: 35px;
+    padding-top: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    
+}
+
+
+.group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+
+

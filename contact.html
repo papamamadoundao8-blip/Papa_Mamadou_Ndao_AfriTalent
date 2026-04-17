@@ -11,81 +11,81 @@
    <link rel="stylesheet" href="Css/style.css">
 </head>
 
-<body class="WWW">
+<body class="index">
    <header>
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg  fixed-top mb-1">
          <div class="container-fluid">
-            
+            <img src="Images/AFRI.png" alt="" class="LOGO mb-1">
             <!-- La class collapse navbar-collapse permet de faciliter le regroupage des liens de navigation sur des ecrans plus petit en menu amburgur comme les telephones -->
             <div class="collapse navbar-collapse">
                <ul class="navbar-nav ms-auto">
-                  <li><a class="nav-link " href="index.html">Accueil</a></li>
+                  <li><a class="nav-link" href="index.html">Accueil</a></li>
                   <li><a class="nav-link" href="freelances.html">Freelances</a></li>
                   <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                   <li><a class="nav-link" href="about.html">A propos</a></li>
                   <li><a class="nav-link" href="contact.html">Contact</a></li>
 
                </ul>
-               <a href="" class="btn btn-primary ms-lg-3">Rejoindre AfriTalent</a>
+               <button class="buttonR"><a href="">Rejoindre AfriTalent</a></button>
             </div>
          </div>
       </nav>
    </header>
-   <main>
-      <div class="container mt-5 pt-5">
-         <div class="row g-5">
-
-            <div class="col-lg-7">
-               <div class="contact">
-                  <div class="taille">
-                     <h3>Contactez-nous</h3>
-                     <form action="#">
-                        <div class="AAA">
-                           <div class="espace">
-                              <label>Prénom</label>
-                              <input type="text" placeholder="Prénom" required>
-                           </div>
-                           <div class="espace">
-                              <label>Nom</label>
-                              <input type="text" placeholder="Nom" required>
-                           </div>
-                        </div>
-
-                        <div class="espace">
-                           <label>Email</label>
-                           <input type="email" placeholder="email@exemple.com" required>
-                        </div>
-
-                        <div class="espace">
-                           <label>Profession</label>
-                           <select required>
-                              <option>Choisir un sujet</option>
-                              <option>Recruteur</option>
-                              <option>Freelance</option>
-                              <option>Autre</option>
-                           </select>
-                        </div>
-
-                        <div class="espace">
-                           <label>Message</label>
-                           <textarea name="message" placeholder=" Au minimum 20 caractéres" required></textarea>
-                        </div>
-
-                        <button type="submit" id="Envoyer" class="btn btn-outline-primary">Envoyer</button>
-                     </form>
-                  </div>
+   <main class="dContact" >
+      <div class="contacts">
+         <div class="contact-form mt-5 pt-5">
+            <h2 class="text-light">Envoyez un message</h2>
+            <form >
+               <div class="group">
+                  <label for="last-name">Nom</label>
+                  <input type="text" id="last-name" name="last-name" placeholder="Votre nom" class="bg-dark">
+                  
                </div>
+
+               <div class="group">
+                  <label for="first-name">Prénom</label>
+                  <input type="text" placeholder="Votre prénom" class="bg-dark">
+
+               </div>
+
+               <div class="group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Donnez votre email" class="bg-dark">
+
+               </div>
+
+               <div class="group">
+                  <label for="subject">Sujet</label>
+                  <select id="subject" name="subject" class="bg-dark">
+                     <option value="" class="text-light">Sélectionnez un sujet</option>
+                     <option value="support">Je suis freelance</option>
+                     <option value="sales">Je cherche un freelance</option>
+                     <option value="other">Autre</option>
+                  </select>
+               </div>
+
+               <div class="group">
+                  <label for="message">Message</label>
+                  <textarea id="" name="" placeholder="Minimum 20 caractéres" class="bg-dark"></textarea>
+               </div>
+               <button type="submit" class="btn btn-primary">Envoyer</button>
+               <button type="reset" class="btn btn-outline-primary">Annuler</button>
+            </form>
+         </div>
+
+         <div class="mt-5 pt-5">
+            <div  >
+               <h3 class="text-light">Nos coordonnées</h3>
+               <p class="text-light"><strong>Email :</strong> contact@AfriTalent.com</p>
+               <p class="text-light"><strong>Téléphone :</strong> +223 123 45 67</p>
+               <p class="text-light"><strong>Adresse :</strong> 14 Rue Mobutu Maduéké, 65000 Yamoussouko</p>
             </div>
-          <div class="col-lg-5">
-               <h3 class="mb-4">Nos coordonnées</h3>
-               <p class=" me-2"> 123 Avenue Blaise Diagne</p>
-               <p>+221 33 800 00 00</p>
 
-         <div class="mt-4">
-           <iframe
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15438.4556481137!2d-17.447547!3d14.6937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDQxJzM3LjMiTiAxN8KwMjYnNTEuMiJX!5e0!3m2!1sfr!2ssn!4v1620000000000!5m2!1sfr!2ssn" width="100%" height="350" style="border:0;">
-            </iframe>
-               </div>
+            <div>
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.2922926156743895!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca97e440cf648!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1614123456789!5m2!1sfr!2sfr"
+                  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+               </iframe>
             </div>
          </div>
       </div>

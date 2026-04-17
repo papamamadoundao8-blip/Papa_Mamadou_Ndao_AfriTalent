@@ -11,11 +11,11 @@
    <link rel="stylesheet" href="Css/style.css">
 </head>
 
-<body class="TARIFS">
+<body class="index">
    <header>
-      <nav class="navbar navbar-expand-lg  fixed-top">
+      <nav class="navbar navbar-expand-lg  fixed-top mb-1">
          <div class="container-fluid">
-            
+            <img src="Images/AFRI.png" alt="" class="LOGO mb-1">
             <!-- La class collapse navbar-collapse permet de faciliter le regroupage des liens de navigation sur des ecrans plus petit en menu amburgur comme les telephones -->
             <div class="collapse navbar-collapse">
                <ul class="navbar-nav ms-auto">
@@ -24,59 +24,146 @@
                   <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                   <li><a class="nav-link" href="about.html">A propos</a></li>
                   <li><a class="nav-link" href="contact.html">Contact</a></li>
+
                </ul>
-               <a href="" class="btn btn-primary ms-lg-3">Rejoindre AfriTalent</a>
+               <button class="buttonR"><a href="">Rejoindre AfriTalent</a></button>
             </div>
          </div>
       </nav>
    </header>
    <main class="mt-5 pt-5">
-      <div class="container">
-         <h2 class="text-center">Nos Tarifs</h2>
+      <div class="container py-5 text-center">
+         <h2 class="display-5  mb-4 mt-1 fw-bold text-light">Nos Tarifs</h2>
 
-         <div class="row">
+         <div class="row g-4 justify-content-center mb-5">
             <div class="col-md-4">
-               <div>
-                  <h2 class="">Gratuit</h2>
-                  <h2 class="">0€<span >/mois</span></h2>
-                  <ul>
-                     <li > Création de profil</li>
-                     <li > Postuler à 5 missions/mois</li>
-                     <li > Support prioritaire</li>
+               <div class="card h-100 p-4 border-2 border-primary pb-5 rounded-5" id="backcarte">
+                  <h2 class="text-primary fw-bold">Gratuit</h2>
+                  <h2 class="display-5 fw-bold text-primary fs-8">0€<span class="fs-6  fw-bold">/mois</span></h2>
+                  <ul class="pt-5 text-start" type="none">
+                     <li class="text-light"> Création de profil</li>
+                     <li class="text-light"> Postuler à 5 missions/mois</li>
+                     <li class="text-light"> Support prioritaire</li>
                   </ul>
-                  <button class=" text-light border border-primary p-2 rounded-4 mt-5 bg-primary">Commencez gratuitement</button>
+                  <button
+                     class=" text-light border border-primary p-2 rounded-4 mt-5 bg-primary text-light fw-bold">Commencez
+                     gratuitement</button>
                </div>
             </div>
 
-            <div >
-               <div class="card ">
-                  <span >POPULAIRE</span>
-                  <h3 >Pro</h3>
-                  <h2>29€<span>/mois</span></h2>
-                  <ul >
-                     <li > Missions illimitées</li>
-                     <li > Badge "Expert Vérifié"</li>
-                     <li> Paiement garanti</li>
+            <div class="col-md-4">
+               <div class="card h-100 p-4 border-4 border-success rounded-5" id="backcarte">
+                  <h2 class=" badge bg-success text-light fw-bold p-3 text-center fs-6" id="pop">POPULAIRE</h2>
+                  <h3 class="text-success">Pro</h3>
+                  <h2 class="display-4 fw-bold text-success">29€<span class="fs-6 fw-bold">/mois</span></h2>
+                  <ul class="text-start" type="none">
+                     <li class=" me-2 text-light"> Missions illimitées</li>
+                     <li class=" me-2 text-light"> Badge "Expert Vérifié"</li>
+                     <li class=" me-2 text-light"> Paiement garanti</li>
                   </ul>
-                  <button >Choisir la Pro</button>
+                  <button class="text-light bg-success border-2 border-success p-2 fw-bold fs-6 rounded-4 mt-5">Choisir
+                     la Pro</button>
                </div>
             </div>
 
-            <div >
-               <div >
-                  <h3>Entreprise</h3>
-                  <h2 >99€<span>/mois</span></h2>
-                  <ul >
-                     <li> Accès au Top 1% talents</li>
-                     <li> Account Manager dédié</li>
+            <div class="col-md-4">
+               <div class="card h-100 p-4 border-3 border-primary rounded-5" id="backcarte">
+                  <h3 class="text-primary">Entreprise</h3>
+                  <h2 class="display-4 fw-bold text-primary ">99€<span class="fs-6 text-primary fw-bold">/mois</span>
+                  </h2>
+                  <ul class="text-start mt-4 p-4" type="none">
+                     <li class=" me-2 text-light"> Accès au Top 1% talents</li>
+                     <li class=" me-2 text-light"> Account Manager dédié</li>
+                     <li class=" me-2 text-light"> Badge "Expert Vérifié"</li>
                   </ul>
-                  <button>Contactez-nous</button>
+                  <button class="bg-primary text-light border border-primary p-2 rounded-4 mt-4">Contactez-nous</button>
                </div>
             </div>
          </div>
       </div>
 
+      <div class="container mb-5">
+         <h2 class="text-center text-light fw-bold pb-5">QUESTIONS ?</h2>
+         <div class="accordion accordion-flush " id="accordionFlushExample" >
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" id="accordion">
+                     <span class="text-light">Comment AfriTalent garantit-il la compétence des développeurs ?</span>
+                  </button>
+               </h2>
+               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Chaque développeur sur la plateforme passe un test technique rigoureux et
+                     une vérification de portfolio avant d'être validé par notre équipe.
+                  </div>
+               </div>
+               <div class="accordion-item">
+                  <h2 class="accordion-header">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"id="accordion">
+                        <span class="text-light">Comment fonctionne le paiement pour un projet ?</span>
+                     </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                     data-bs-parent="#accordionFlushExample">
+                     <div class="accordion-body">Le client dépose les fonds sur un compte séquestre sécurisé. L'argent
+                        n'est débloqué et versé au développeur qu'une fois que le client a validé le travail livré.
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#flush-collapseThree" aria-expanded="false"
+                           aria-controls="flush-collapseThree"id="accordion">
+                           <span class="text-light">Quels sont les frais de service de la plateforme ?</span>
+                        </button>
+                     </h2>
+                     <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">L'inscription est gratuite. AfriTalent prélève une commission de 10%
+                           sur chaque contrat finalisé pour couvrir les frais de maintenance et de sécurisation des
+                           paiements.
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseThree" aria-expanded="false"
+                              aria-controls="flush-collapseThree"id="accordion">
+                             <span class="text-light"> Puis-je recruter un développeur pour une mission longue durée ?</span>
+                           </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                           data-bs-parent="#accordionFlushExample">
+                           <div class="accordion-body">Oui, vous pouvez proposer des missions ponctuelles ou des
+                              contrats à long terme. Nous facilitons la mise en relation selon vos besoins spécifiques.
+                           </div>
+                        </div>
+                        <div class="accordion-item">
+                           <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                 aria-controls="flush-collapseThree"id="accordion">
+                                 <span class="text-light">Que se passe-t-il en cas de litige entre un client et un
+                                    freelance ?</span>
+                              </button>
+                           </h2>
+                           <div id="flush-collapseThree" class="accordion-collapse collapse"
+                              data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body fw-bold">En cas de désaccord, l'équipe de médiation
+                                 d'AfriTalent intervient pour analyser les livrables et trouver une solution équitable
+                                 pour les deux parties.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       
+
    </main>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
    <script src="Js/main.js"></script>
