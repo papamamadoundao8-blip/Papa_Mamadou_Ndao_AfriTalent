@@ -31,15 +31,15 @@
          </div>
       </nav>
    </header>
-   <main class="dContact" >
+   <main class="dContact">
       <div class="contacts">
          <div class="contact-form mt-5 pt-5">
             <h2 class="text-light">Envoyez un message</h2>
-            <form >
+            <form>
                <div class="group">
                   <label for="last-name">Nom</label>
                   <input type="text" id="last-name" name="last-name" placeholder="Votre nom" class="bg-dark">
-                  
+
                </div>
 
                <div class="group">
@@ -68,13 +68,15 @@
                   <label for="message">Message</label>
                   <textarea id="" name="" placeholder="Minimum 20 caractéres" class="bg-dark"></textarea>
                </div>
-               <button type="submit" class="btn btn-primary">Envoyer</button>
-               <button type="reset" class="btn btn-outline-primary">Annuler</button>
+               <div class="d-flex justify-content-center gap-4">
+                  <button type="submit" class="btn btn-primary" id="btnEnvoyer">Envoyer</button>
+                  <button type="reset" class="btn btn-outline-primary" id="btnAnnuler">Annuler</button>
+               </div>
             </form>
          </div>
 
          <div class="mt-5 pt-5">
-            <div  >
+            <div>
                <h3 class="text-light">Nos coordonnées</h3>
                <p class="text-light"><strong>Email :</strong> contact@AfriTalent.com</p>
                <p class="text-light"><strong>Téléphone :</strong> +223 123 45 67</p>

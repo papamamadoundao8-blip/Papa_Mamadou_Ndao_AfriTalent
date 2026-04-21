@@ -7,6 +7,7 @@
    <title>Document</title>
 
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
    <link rel="stylesheet" href="Css/style.css">
 </head>
 
@@ -58,9 +59,8 @@
                      </div>
                   </div>
                </div>
-
                <div>
-                  <img src="Images/photoAcceuil.png" alt="" width="680px" height="587px">
+                  <img src="Images/AAT1.png" alt="" width="700px" height="587px">
                </div>
             </div>
          </section>
@@ -70,41 +70,56 @@
 
    <section class="py-5 mb-5">
       <div class="container">
-         <h3 class="text-center fw-bold mb-2 pb-3 mt-5 text-light">Comment ça marche ?</h3>
-         <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
-            <div class="col">
+         <h3 class="text-center fw-bold mb-5 pb-3 mt-5 text-light" id="Titre">Comment ça marche ?</h3>
+
+         <div class="Commentçamarhce">
+
+            <div id="carte1">
                <div class="card h-100 rounded-5" id="backcarte">
-                  <img src="Images/postuler.jpg" alt="" class="rounded-5">
+                  <img src="Images/Capture d'écran 2026-04-19 202310.png" alt="" width="150px" height="100px"
+                     class="rounded-5">
                   <div class="card-body">
                      <p class="badge bg-success">1</p>
                      <h5 class="card-title text-light">Inscrivez-vous</h5>
-                     <p class="card-text text-light">Crée votre profil en quelques minutes et mettez en avant vos
-                        compétences pour
-                        rejoindre la communauté <span class="text-primary fw-bold">AfriTalent</span>.</p>
+                     <p class="card-text text-light">Créez votre profil en quelques minutes et rejoignez notre
+                        communauté.</p>
                   </div>
                </div>
             </div>
-            <div class="col">
+
+            <div id="carte2">
                <div class="card h-100 rounded-5" id="backcarte">
-                  <img src="Images/pos2.jpg" alt="" class="rounded-5">
+                  <img src="Images/Capture d'écran 2026-04-19 202723.png" alt="" width="150px" height="130px"
+                     class="rounded-5">
                   <div class="card-body">
                      <p class="badge bg-success">2</p>
                      <h5 class="card-title text-light">Postuler</h5>
-                     <p class="card-text text-light">Trouvez des missions qui correspondent à vos compétences,adaptées à
-                        votre
-                        profil et postulez facilement aux opportunités qui vous correspondent</p>
+                     <p class="card-text text-light">Trouvez des missions qui correspondent à votre expertise.</p>
                   </div>
                </div>
             </div>
-            <div class="col">
+
+            <div id="carte3">
                <div class="card h-100 rounded-5" id="backcarte">
-                  <img src="Images/pos3.jpg" alt="" class="rounded-5">
+                  <img src="Images/Capture d'écran 2026-04-19 202951.png" alt="" width="150px" height="130px"
+                     class="rounded-5">
                   <div class="card-body">
                      <p class="badge bg-success">3</p>
                      <h5 class="card-title text-light">Travailler</h5>
-                     <p class="card-text text-light">Gérez vos projets via notre interface ultra sécurisée et Collaborez
-                        avec vos
-                        clients, gérez vos projets efficacement et développez votre activité en toute sécurité.</p>
+                     <p class="card-text text-light">Gérez vos projets via notre interface dédiée.</p>
+                  </div>
+               </div>
+            </div>
+
+            <div id="carte4">
+               <div class="card h-100 rounded-5 border-0" id="backcarte">
+                  <img src="Images/Capture d'écran 2026-04-19 210205.png" alt="" width="150px" height="130px"
+                     class="rounded-5">
+                  <div class="card-body">
+                     <p class="badge bg-success">4</p>
+                     <h5 class="card-title text-light">Réussissez</h5>
+                     <p class="card-text text-light">Développez votre réseau, vos compétences et augmentez vos revenus
+                        durablement.</p>
                   </div>
                </div>
             </div>
@@ -113,8 +128,8 @@
    </section>
    <section class="py-5 " id="Catégories">
       <div class="container">
-         <h2 class="text-center mb-5 pb-5 text-light">Catégories de services</h2>
-         <div class="row row-cols-1 row-cols-md-3 g-4">
+         <h2 class="text-center text-light" id="Titre1">Catégories de services</h2>
+         <div class="row row-cols-1 row-cols-md-3 g-5">
             <div class="col">
                <div class="card h-100 rounded-5" id="backcarte">
                   <img src="Images/imageAcceuil.jpg" alt="" class="rounded-5" id="services">
@@ -133,7 +148,7 @@
                   <img src="Images/Capture d'écran 2026-04-11 135808.png" alt="..." class="rounded-5" id="services">
                   <div class="card-body">
                      <h5 class="card-title text-primary fw-bold">Design UI/UX</h5>
-                     <p class="card-text text-light">Nous nous chargeons de créer des interfaces intuitives et
+                     <p class="card-text text-light small">Nous nous chargeons de créer des interfaces intuitives et
                         captivantes qui renforcent l'identité de
                         votre marque.</p>
                      <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">100
@@ -147,8 +162,9 @@
                   <img src="Images/digitale.png" alt="" class="rounded-5" id="services">
                   <div class="card-body">
                      <h5 class="card-title text-primary fw-bold"> Marketing Digital</h5>
-                     <p class="card-text text-light">De la stratégie de contenu à l'acquisition payante, nous déployons
-                        des campagnes ciblées pour maximiser votre retour sur investissement.</p>
+                     <p class="card-text text-light small">De la stratégie de contenu à l'acquisition payante, nous
+                        déployons
+                        des campagnes pour maximiser votre retour sur investissement.</p>
                      <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">46
                            Freelances</a></button>
                   </div>
@@ -159,8 +175,9 @@
                   <img src="Images/data_ia.jpg" alt="" class="rounded-5" id="services">
                   <div class="card-body">
                      <h5 class="card-title text-primary fw-bold">Data & IA</h5>
-                     <p class="card-text text-light">Exploitez la puissance de vos données pour anticiper les tendances
-                        et automatiser vos processus. Nous intégrons des modèles d'IA personnalisés pour donner un temps
+                     <p class="card-text text-light small">Exploitez la puissance de vos données pour anticiper les
+                        tendances
+                        et automatiser vos processus. Nous intégrons des modèles d'IA pour donner un temps
                         d'avance à votre entreprise.</p>
                      <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">50
                            Freelances</a></button>
@@ -185,7 +202,7 @@
                   <img src="Images/devops.png" alt="" class="rounded-5" id="services">
                   <div class="card-body">
                      <h5 class="card-title text-primary fw-bold">DevOps & Cloud</h5>
-                     <p class="card-text text-light">Accélérez vos cycles de déploiement et garantissez la haute
+                     <p class="card-text text-light small" >Accélérez vos cycles de déploiement et garantissez la haute
                         disponibilité de vos services. Nous optimisons vos architectures Cloud pour réduire vos coûts et
                         assurer une résilience totale face à la montée en charge.</p>
                      <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">30
@@ -197,65 +214,80 @@
    </section>
 
    <section class="py-5 ">
-      <div class="container">
-         <h4 class="text-center mb-5 "><span class="border border-primary rounded-5 p-2 text-light"
-               id="temoignage mt-5 pt-5">Témoignages</span></h4>
-         <h2 class="text-center pb-3 text-light mb-5 pb-5">Ce que disent nos <span class="text-primary">Clients</span>
-         </h2>
-         <div class="row row-cols-md-3 g-4">
-            <div>
-               <div class="card p-1 rounded-5" id="backcarte">
-                  <div class="d-flex justify-content-center mt-3 ">
-                     <img src="Images/Avis1.jpeg" alt="" style="width: 100px; height: 120px;"class="rounded-5">
+  <div class="container">
+    <h4 class="text-center mb-5 "><span class="border border-primary rounded-5 p-2 text-light" id="Titre2" id="TEM">Témoignages</span></h4>
+    <h2 class="text-center pb-3 text-light mb-5 pb-5" id="TEM">Ce que disent nos <span class="text-primary">Clients</span></h2>
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card p-1 rounded-5 h-100">
+                <div class="d-flex justify-content-center mt-3 ">
+                  <img src="Images/Avis1.jpeg" alt="" style="width: 100px; height: 120px;" class="rounded-5">
+                </div>
+                <div class="card-body">
+                  <h5 class="mb-1 text-light" id="TEM">Roberto Firmino</h5>
+                  <p class=" mb-2 text-primary fw-bold">Freelance</p>
+                  <div class="mb-3 text-warning">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                   </div>
-                  <div class="card-body">
-                     <h5 class="mb-1 text-light">Papa Ibou Jackson</h5>
-                     <p class=" mb-2 text-primary fw-bold">Freelance</p>
-                     <div class="mb-3 text-warning">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                     </div>
-                     <p class="text-light">En tant que gérant d'une agence marketing basée en France, je cherchais
-                        des rédacteurs web capable de comprendre le marché francophone. J'ai découvert AfriTalent et
-                        j'ai été bluffé par la réactivité des
-                        candidats.</p>
-                  </div>
-               </div>
+                  <h5 class="text-light"id="TEM">En tant que gérant d'une agence marketing basée en France, je cherchais des rédacteurs web capable de comprendre le marché francophone. J'ai découvert AfriTalent et j'ai été bluffé par la réactivité des candidats.</h5>
+                </div>
+              </div>
             </div>
-            <div>
-               <div class="card p-1 rounded-5"id="backcarte">
-                  <div class="d-flex justify-content-center mt-3">
-                     <img src="Images/Avis2.jpeg" alt="" style="width: 90px; height: 100px;" class="rounded-5">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="card p-1 rounded-5 h-100" >
+                <div class="d-flex justify-content-center mt-3">
+                  <img src="Images/Avis2.jpeg" alt="" style="width: 100px; height: 110px;" class="rounded-5">
+                </div>
+                <div class="card-body">
+                  <h5 class=" text-light" id="TEM">Emile François Gomis</h5>
+                  <p class=" mb-2 text-primary fw-bold">Freelance</p>
+                  <div class=" mb-3 text-warning">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                   </div>
-                  <div class="card-body">
-                     <h5 class=" mb-1 text-light">Emile François Gomis</h5>
-                     <p class=" mb-2 text-primary fw-bold">Freelance</p>
-                     <div class=" mb-3 text-warning">
-                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                     </div>
-                     <p class=" text-light ">Je suis développeur junior vivant à Dakar et j'avais du mal à me faire une
-                        place sur les grosses plateformes internationales comme Upwork. Sur AfriTalent, j'ai
-                        l'impression que mon profil est vraiment mis en valeur.Vraiment c'est Top </p>
-                  </div>
-               </div>
+                  <h5 class=" text-light pb-3 "id="TEM">Je suis développeur junior vivant à Dakar et j'avais du mal à me faire une place sur les grosses plateformes internationales comme Upwork. Sur AfriTalent, j'ai l'impression que mon profil est vraiment mis en valeur.Vraiment c'est Top </h5>
+                </div>
+              </div>
             </div>
-
-            <div class="card p-1 rounded-5" id="backcarte">
-               <div class="d-flex justify-content-center mt-3">
-                  <img src="Images/Avis3.jpeg" alt="" style="width: 80px; height: 100px;"class="rounded-5">
-               </div>
-               <div class="card-body">
-                  <h5 class=" mb-1 text-light">Marie Ndiago</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="card  rounded-5 h-100" >
+                <div class="d-flex justify-content-center mt-3">
+                  <img src="Images/Avis3.jpeg" alt="" style="width: 100px; height: 100px;" class="rounded-5">
+                </div>
+                <div class="card-body">
+                  <h5 class=" mb-1 text-light" id="TEM">Marie Ndiago</h5>
                   <p class=" mb-2 text-primary fw-bold">Consultante RH</p>
                   <div class="mb-3 text-warning">
-                     <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
                   </div>
-                  <p class=" text-light">Consultante RH depuis 5 ans . Ce que j'apprécie, c'est le
-                     sérieux : on sent que les clients qui viennent ici cherchent de la vraie compétence et pas juste un
-                     prix bas. La plateforme est moderne, les virements sont ponctuels.</p>
-               </div>
-         </div>
+                  <h5 class=" text-light mb-2 " id="TEM">Consultante RH depuis 5 ans . Ce que j'apprécie, c'est le sérieux : on sent que les clients qui viennent ici cherchent de la vraie compétence et pas juste un prix bas. La plateforme est moderne, les virements sont ponctuels.</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-   </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
    </main>
 
    <section class="py-5 pt-5" id="bbb">
