@@ -17,20 +17,24 @@
          <div class="container-fluid">
             <img src="Images/AFRI.png" alt="" class="LOGO mb-1">
             <!-- La class collapse navbar-collapse permet de faciliter le regroupage des liens de navigation sur des ecrans plus petit en menu amburgur comme les telephones -->
-            <div class="collapse navbar-collapse">
-               <ul class="navbar-nav ms-auto">
-                  <li><a class="nav-link" href="index.html">Accueil</a></li>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto text-end">
+                  <li><a class="nav-link " href="index.html">Accueil</a></li>
                   <li><a class="nav-link" href="freelances.html">Freelances</a></li>
                   <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                   <li><a class="nav-link" href="about.html">A propos</a></li>
                   <li><a class="nav-link" href="contact.html">Contact</a></li>
-
+                  <li><a class="buttonR btn btn-primary" href="">Rejoindre AfriTalent</a></li>
                </ul>
-               <button class="buttonR"><a href="">Rejoindre AfriTalent</a></button>
+
             </div>
          </div>
       </nav>
    </header>
+
    <main class="dContact">
       <div class="contacts">
          <div class="contact-form mt-5 pt-5">
@@ -85,12 +89,11 @@
 
             <div>
                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.2922926156743895!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca97e440cf648!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1614123456789!5m2!1sfr!2sfr"
-                  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14595.7478332501!2d-17.450970235227974!3d14.700131441579636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2ssn!4v1776953668284!5m2!1sfr!2ssn"
+                  width="100%" height="250" class="border-2 border-dark">
                </iframe>
             </div>
          </div>
-      </div>
    </main>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
    <script src="Js/main.js"></script>

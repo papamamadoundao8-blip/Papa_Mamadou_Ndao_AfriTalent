@@ -12,31 +12,37 @@
 </head>
 
 <body class="index">
-   <div >
+   <div>
       <header>
          <nav class="navbar navbar-expand-lg  fixed-top mb-1">
             <div class="container-fluid">
                <img src="Images/AFRI.png" alt="" class="LOGO mb-1">
                <!-- La class collapse navbar-collapse permet de faciliter le regroupage des liens de navigation sur des ecrans plus petit en menu amburgur comme les telephones -->
-               <div class="collapse navbar-collapse">
-                  <ul class="navbar-nav ms-auto">
+               <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto text-end">
                      <li><a class="nav-link " href="index.html">Accueil</a></li>
                      <li><a class="nav-link" href="freelances.html">Freelances</a></li>
                      <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                      <li><a class="nav-link" href="about.html">A propos</a></li>
                      <li><a class="nav-link" href="contact.html">Contact</a></li>
-
+                     <li><a class="buttonR btn btn-primary" href="">Rejoindre AfriTalent</a></li>
                   </ul>
-                  <button class="buttonR"><a href="">Rejoindre AfriTalent</a></button>
+
                </div>
             </div>
          </nav>
       </header>
+
       <main class="mt-5 pt-5">
          <div class="container py-5">
-            <h2 class="text-center mb-4 text-light">Les Freelances de <span class="text-primary fw-bold">AfriTalent</span></h2>
+            <h2 class="text-center mb-4 text-light">Les Freelances de <span
+                  class="text-primary fw-bold">AfriTalent</span></h2>
             <div class="row mb-5 d-flex justify-content-center">
-               <div class="col-md-8">
+               <div class="col-12, col-md-6, col-lg-4">
                   <!-- btn-outline-primary permet d'avoir la couleur bleu lorsque que l'on survole le lien -->
                   <div class="d-flex flex-wrap gap-2 justify-content-center">
                      <button class="btn btn-primary rounded-4">Tous</button>
@@ -49,7 +55,7 @@
             </div>
 
             <div class="row row-cols-lg-3 g-5">
-               <div class="col">
+               <div class="col-12, col-md-6, col-lg-4">
                   <div class="card h-100 rounded-5 " id="backcarte">
                      <div class="text-center mt-3">
                         <img src="Images/F1.png" alt="" width="200px" height="200px " class="rounded-5">
@@ -57,7 +63,7 @@
                      <div class="card-body">
                         <div class="d-flex justify-content-between  mb-2">
                            <h5 class="text-light fw-bold">Krepin Alves Diatta</h5>
-                           <span class="badge bg-success p-2 fw-bold">Libre</span>
+                           <span class="badge bg-success p-2 fw-bold rounded-5">Libre</span>
                         </div>
                         <p class="text-light fw-bold">Développeur Web</p>
                         <p class="carteVert fw-bold">
@@ -70,11 +76,11 @@
                               <p class="mt-3 text-warning fw-bold"> 4.9 (24 avis)</p>
                            </div>
                         </div>
-                        <a href="" class="btn btn-primary w-50 mt-3 text-light rounded-4">Voir le profil</a>
+                        <a href="" class="btn btn-primary w-50 mt-3 text-light rounded-5">Voir le profil</a>
                      </div>
                   </div>
                </div>
-               <div class="col ">
+               <div class="col-12, col-md-6, col-lg-4 ">
                   <div class="card h-100 rounded-5" id="backcarte">
                      <div class="text-center mt-3">
                         <img src="Images/F2.png" alt="" width="200px" height="200px " class="rounded-5">
@@ -82,10 +88,10 @@
                      <div class="card-body">
                         <div class="d-flex justify-content-between  mb-2">
                            <h5 class="text-light fw-bold">Gana Gueye</h5>
-                           <span class="badge bg-success p-2 fw-bold">Libre</span>
+                           <span class="badge bg-success p-2 fw-bold rounded-5">Libre</span>
                         </div>
                         <p class="text-light fw-bold">Ingenieur Data & IA</p>
-                        <p class="text-success fw-bold">
+                        <p class="carteVert fw-bold">
                            Plus de 100 projets réalisés
                         </p>
                         <hr>
@@ -99,18 +105,18 @@
                      </div>
                   </div>
                </div>
-               <div class="col ">
-                  <div class="card h-100 rounded-5"id="backcarte" >
+               <div class="col-12, col-md-6, col-lg-4 ">
+                  <div class="card h-100 rounded-5" id="backcarte">
                      <div class="text-center mt-3">
                         <img src="Images/F3.png" alt="" width="200px" height="200px " class="rounded-5">
                      </div>
                      <div class="card-body">
                         <div class="d-flex justify-content-between  mb-2">
                            <h5 class="text-light fw-bold">Kalidou Koulibaly</h5>
-                           <span class="badge bg-success p-2 fw-bold">Libre</span>
+                           <span class="badge bg-success p-2 fw-bold rounded-5">Libre</span>
                         </div>
-                        <p class="text-light fw-bold text-light" >Développeur Web</p>
-                        <p class="text-success fw-bold">
+                        <p class="text-light fw-bold text-light">Développeur Web</p>
+                        <p class="carteVert fw-bold">
                            Plus de 180 projets réalisés
                         </p>
                         <hr>
@@ -124,7 +130,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col ">
+               <div class="col-12, col-md-6, col-lg-4 ">
                   <div class="card h-100 rounded-5" id="backcarte">
                      <div class="text-center mt-3">
                         <img src="Images/F4.png" alt="" width="200px" height="200px " class="rounded-5">
@@ -132,10 +138,10 @@
                      <div class="card-body">
                         <div class="d-flex justify-content-between  mb-2">
                            <h5 class="text-light fw-bold">Josephine Ndeki</h5>
-                           <span class="badge bg-success p-2 fw-bold">Libre</span>
+                           <span class="badge bg-success p-2 fw-bold rounded-5">Libre</span>
                         </div>
                         <p class="text-light fw-bold">Expert en Marketing</p>
-                        <p class="text-success fw-bold">
+                        <p class="carteVert fw-bold">
                            Plus de 80 projets réalisés
                         </p>
                         <hr>
@@ -149,18 +155,18 @@
                      </div>
                   </div>
                </div>
-               <div class="col ">
-                  <div class="card h-100 rounded-5"id="backcarte" >
+               <div class="col-12, col-md-6, col-lg-4 ">
+                  <div class="card h-100 rounded-5" id="backcarte">
                      <div class="text-center mt-3">
                         <img src="Images/F5.png" alt="" width="200px" height="200px " class="rounded-5">
                      </div>
                      <div class="card-body">
                         <div class="d-flex justify-content-between  mb-2">
                            <h5 class="text-light fw-bold">Marie Pierre Drogba</h5>
-                           <span class="badge bg-success p-2 fw-bold">Libre</span>
+                           <span class="badge bg-success p-2 fw-bold rounded-5">Libre</span>
                         </div>
                         <p class="text-light fw-bold">Designer</p>
-                        <p class="text-success fw-bold">
+                        <p class="carteVert fw-bold">
                            Plus de 50 projets réalisés
                         </p>
                         <hr>
@@ -174,18 +180,18 @@
                      </div>
                   </div>
                </div>
-               <div class="col ">
-                  <div class="card h-100 rounded-5"id="backcarte">
+               <div class="col-12, col-md-6, col-lg-4 ">
+                  <div class="card h-100 rounded-5" id="backcarte">
                      <div class="text-center mt-3">
                         <img src="Images/F6.png" alt="" width="200px" height="200px " class="rounded-5">
                      </div>
                      <div class="card-body">
                         <div class="d-flex justify-content-between  mb-2">
                            <h5 class="text-light">Marie Joseph Mbobutu</h5>
-                           <span class="badge bg-success p-2 fw-bold">Libre</span>
+                           <span class="badge bg-success p-2 fw-bold rounded-5">Libre</span>
                         </div>
                         <p class="text-light fw-bold">Développeur Web</p>
-                        <p class="text-success fw-bold">
+                        <p class="carteVert fw-bold">
                            Plus de 129 projets réalisés
                         </p>
                         <hr>
@@ -199,7 +205,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col ">
+               <div class="col-12, col-md-6, col-lg-4 ">
                   <div class="card h-100 rounded-5" id="backcarte">
                      <div class="text-center mt-3">
                         <img src="Images/F7.png" alt="" width="200px" height="200px " class="rounded-5">
@@ -207,10 +213,10 @@
                      <div class="card-body">
                         <div class="d-flex justify-content-between  mb-2">
                            <h5 class="text-light fw-bold">Pierre Diakité</h5>
-                           <span class="badge bg-success p-2 fw-bold">Libre</span>
+                           <span class="badge bg-success p-2 fw-bold rounded-5">Libre</span>
                         </div>
-                        <p class="text-light fw-bold">Développeur Web</p>
-                        <p class="text-success fw-bold">
+                        <p class="text-light fw-bold">Designer</p>
+                        <p class="carteVert fw-bold">
                            Plus de 40 projets réalisés
 
                         </p>
@@ -225,7 +231,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col ">
+               <div class="col-12, col-md-6, col-lg-4">
                   <div class="card h-100 rounded-5" id="backcarte">
                      <div class="text-center mt-3">
                         <img src="Images/F8.png" alt="" width="200px" height="200px " class="rounded-5">
@@ -233,10 +239,10 @@
                      <div class="card-body">
                         <div class="d-flex justify-content-between  mb-2">
                            <h5 class="text-light fw-bold">Antoine Ossimen</h5>
-                           <span class="badge bg-success p-2 fw-bold">Libre</span>
+                           <span class="badge bg-success p-2 fw-bold rounded-5">Libre</span>
                         </div>
-                        <p class="text-light fw-bold">Développeur Web</p>
-                        <p class="text-success fw-bold">
+                        <p class="text-light fw-bold">Data & IA</p>
+                        <p class="carteVert fw-bold">
                            Plus de 76 projets réalisés
                         </p>
                         <hr>
@@ -250,18 +256,18 @@
                      </div>
                   </div>
                </div>
-               <div class="col ">
+               <div class="col-12, col-md-6, col-lg-4 ">
                   <div class="card h-100  rounded-5" id="backcarte">
                      <div class="text-center mt-3">
                         <img src="Images/F9.jpeg" alt="" width="200px" height="200px " class="rounded-5">
                      </div>
                      <div class="card-body">
                         <div class="d-flex justify-content-between  mb-2">
-                           <h5>Dani Lookman</h5>
-                           <span class="badge bg-success p-2 fw-bold">Libre</span>
+                           <h5 class="text-light">Dani Lookman</h5>
+                           <span class="badge bg-success p-2 fw-bold rounded-5">Libre</span>
                         </div>
-                        <p class="text-light fw-bold">Développeur Web</p>
-                        <p class="text-success fw-bold">
+                        <p class="text-light fw-bold">Expert Marketing</p>
+                        <p class="carteVert fw-bold">
                            Plus de 390 projets réalisés
                         </p>
                         <hr>
@@ -275,7 +281,6 @@
                      </div>
                   </div>
                </div>
-
             </div>
          </div>
    </div>

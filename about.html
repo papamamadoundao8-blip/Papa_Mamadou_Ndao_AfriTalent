@@ -14,39 +14,38 @@
 
 <body class="index">
    <header>
-         <nav class="navbar navbar-expand-lg  fixed-top mb-1">
-            <div class="container-fluid">
-               <img src="Images/AFRI.png" alt="" class="LOGO mb-1">
-               <!-- La class collapse navbar-collapse permet de faciliter le regroupage des liens de navigation sur des ecrans plus petit en menu amburgur comme les telephones -->
-               <div class="collapse navbar-collapse">
-                  <ul class="navbar-nav ms-auto">
-                     <li><a class="nav-link " href="index.html">Accueil</a></li>
-                     <li><a class="nav-link" href="freelances.html">Freelances</a></li>
-                     <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                     <li><a class="nav-link" href="about.html">A propos</a></li>
-                     <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <nav class="navbar navbar-expand-lg  fixed-top mb-1">
+         <div class="container-fluid">
+            <img src="Images/AFRI.png" alt="" class="LOGO mb-1">
+            <!-- La class collapse navbar-collapse permet de faciliter le regroupage des liens de navigation sur des ecrans plus petit en menu amburgur comme les telephones -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto text-end">
+                  <li><a class="nav-link " href="index.html">Accueil</a></li>
+                  <li><a class="nav-link" href="freelances.html">Freelances</a></li>
+                  <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                  <li><a class="nav-link" href="about.html">A propos</a></li>
+                  <li><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li><a class="buttonR btn btn-primary" href="">Rejoindre AfriTalent</a></li>
+               </ul>
 
-                  </ul>
-                  <button class="buttonR"><a href="">Rejoindre AfriTalent</a></button>
-               </div>
             </div>
-         </nav>
-      </header>
-
+         </div>
+      </nav>
+   </header>
    <section class="mt-5 pt-5">
       <div class="container py-5">
-         <div class="row align-items-center mb-5 pb-5">
-            <div class="col-md-6">
-               <h2 class="display-5 fw-bold mb-4 text-light">Notre Histoire</h2>
-               <p class="fw-bold text-light">Né au Sénégal en 2011, AfriTalent a pour mission de briser les frontières
-                  géographiques
-                  pour
-                  le talent tech africain.</p>
+         <div class="row d-flex justify-content-between mb-5 pb-5" id="notrehistoire">
+            <div class="col-12 col-md-6 col-lg-4">
+               <h2 class="display-5 fw-bold mb-2 text-light">Notre Histoire</h2>
+               <p class="fw-bold text-light mt-5 ">Né au Sénégal en 2011, AfriTalent a pour mission de briser les frontières géographiques pour le talent tech africain.</p>
                <p class="text-light">Nous croyons que l'Afrique est le futur de la technologie mondiale. Notre
                   plateforme offre une infrastructure de confiance pour les échanges commerciaux numériques.</p>
             </div>
             <div class="col-md-6">
-               <img src="Images/Acceuill.jpg" alt="" width="620px" height="380px" class="rounded-4" id="Notre">
+               <img src="Images/Acceuill.jpg" alt="" width="620px" height="380px" class="rounded-4" id="histoire">
             </div>
          </div>
       </div>
@@ -56,7 +55,7 @@
 
       <div class="row g-4 text-center">
 
-         <div class="col-md-6 col-lg-3">
+         <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 rounded-4" id="backcarte">
                <div class="card-body">
                   <div class="mb-3">
@@ -68,8 +67,8 @@
             </div>
          </div>
 
-         <div class="col-md-6 col-lg-3">
-            <div class="card h-100 rounded-4"id="backcarte">
+         <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 rounded-4" id="backcarte">
                <div class="card-body">
                   <div class="mb-3">
                      <img src="Images/Accessibilité.jpg" alt="" width="220px" height="150px" class="rounded-4">
@@ -79,28 +78,16 @@
                </div>
             </div>
          </div>
-         <div class="col-md-6 col-lg-3">
-            <div class="card h-100 rounded-4"id="backcarte">
+         <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 rounded-4" id="backcarte">
                <div class="card-body">
                   <div class="mb-3">
                      <img src="Images/unir.jpeg" alt="" width="220px" height="150px" class="rounded-4">
                   </div>
                   <h5 class="card-title text-primary">Communauté</h5>
-                  <p class="card-text text-light fw-bold">L'esprit d'équipe et le partage sont au cœur de chaque projet que nous
+                  <p class="card-text text-light fw-bold">L'esprit d'équipe et le partage sont au cœur de chaque projet
+                     que nous
                      entreprenons.</p>
-               </div>
-            </div>
-         </div>
-
-         <div class="col-md-6 col-lg-3">
-            <div class="card h-100 rounded-4"id="backcarte">
-               <div class="card-body">
-                  <div class="mb-3">
-                     <img src="Images/postuler.jpg" alt="" width="220px" height="150px" class="rounded-4">
-                  </div>
-                  <h5 class="card-title text-primary">Excellence</h5>
-                  <p class="card-text text-light fw-bold">Nous visons la plus haute qualité dans chaque détail pour garantir
-                     votre satisfaction.</p>
                </div>
             </div>
          </div>
@@ -110,51 +97,46 @@
       <h2 class="text-center mt-4 mb-5 pb-5 text-light">Notre Equipe</h2>
       <div class="container my-5 py-5 ">
          <div class="row g-5">
-            <div class="col-md-3">
-               <div class="card h-100 rounded-4"id="backcarte">
-                  <img src="Images/Avis1.jpeg" alt="" width="242px" height="250px" class="rounded-4"id="Notre">
+            <div class="col-12 col-md-6 col-lg-3">
+               <div class="card h-100 rounded-4" id="backcarte">
+                  <img src="Images/Avis1.jpeg" alt=""  id="Notre" class="ms-2" width="220px" height="250px">
                   <div class="card-body text-center">
                      <h5 class="fw-bold text-light">Papa Ibou Jackson</h5>
-                     <h5 class="text-success fw-bold">Directeur General</h5>
+                     <h5 class="carteVert fw-bold">Directeur General</h5>
                   </div>
                </div>
             </div>
-            <div class="col-md-3">
-               <div class="card h-100 rounded-4"id="backcarte">
-                  <img src="Images/F6.png" alt="" width="242px" height="250px" class="rounded-4" id="Notre">
+            <div class="col-md-6 col-lg-3">
+               <div class="card h-100 rounded-4" id="backcarte">
+                  <img src="Images/F6.png" alt="" id="Notre" class="ms-2" width="220px" height="250px">
                   <div class="card-body text-center">
                      <h5 class="fw-bold text-light">Marie Mbobutu</h5>
-                     <h5 class="text-success fw-bold">Secretaire Géneral</h5>
+                     <h5 class="carteVert fw-bold">Secretaire Géneral</h5>
                   </div>
                </div>
             </div>
-            <div class="col-md-3">
-               <div class="card h-100 rounded-4"id="backcarte">
-                  <img src="Images/F9.jpeg" alt="" width="242px" height="250px" class="rounded-4" id="Notre">
+            <div class="col-md-6 col-lg-3">
+               <div class="card h-100 rounded-4" id="backcarte">
+                  <img src="Images/F9.jpeg" alt="" id="Notre" class="ms-2" width="220px" height="250px">
                   <div class="card-body text-center">
                      <h5 class="fw-bold text-light">Dani Lookman</h5>
-                     <h5 class="text-success fw-bold">Chef de projet digital</h5>
+                     <h5 class="carteVert fw-bold">Chef de projet digital</h5>
                   </div>
                </div>
             </div>
-
-            <div class="col-md-3 ">
-               <div class="card h-100 rounded-4"id="backcarte">
-                  <img src="Images/F4.png" alt="" width="242px" height="250px" class="rounded-4" id="Notre">
+            <div class="col-md-6 col-lg-3">
+               <div class="card h-100 rounded-5" id="backcarte">
+                  <img src="Images/F4.png" alt="" id="Notre" class="ms-2" width="220px" height="250px">
                   <div class="card-body text-center">
                      <h5 class="fw-bold text-light">Josephine Ndeki</h5>
-                     <h5 class="text-success fw-bold">Directrice Financier</h5>
+                     <h5 class="carteVert fw-bold">Directrice Financier</h5>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </section>
-
-
-
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   <!-- Votre script JavaScript -->
    <script src="Js/main.js"></script>
 
 </body>
