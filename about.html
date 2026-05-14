@@ -9,6 +9,7 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
    <link rel="stylesheet" href="Css/style.css">
 </head>
 
@@ -23,24 +24,30 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav ms-auto text-end">
-                  <li><a class="nav-link " href="index.html">Accueil</a></li>
-                  <li><a class="nav-link" href="freelances.html">Freelances</a></li>
-                  <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                  <li><a class="nav-link" href="about.html">A propos</a></li>
-                  <li><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li><a class="nav-link text-light " href="index.html">Accueil</a></li>
+                  <li><a class="nav-link text-light" href="freelances.html">Freelances</a></li>
+                  <li><a class="nav-link text-light" href="tarifs.html">Tarifs</a></li>
+                  <li><a class="nav-link text-light" href="about.html">A propos</a></li>
+                  <li><a class="nav-link text-light" href="contact.html">Contact</a></li>
                   <li><a class="buttonR btn btn-primary" href="">Rejoindre AfriTalent</a></li>
+                  <li class="nav-item d-flex align-items-center btn btn-dark rounded-5 ms-3" id="noiretblanc">
+                     <i class="fa-solid fa-moon" id="NOIRBLANC"></i>
+                  </li>
                </ul>
 
             </div>
          </div>
       </nav>
    </header>
+   <button id="retourverslehaut">Retour en haut</button>
    <section class="mt-5 pt-5">
+
       <div class="container py-5">
          <div class="row d-flex justify-content-between mb-5 pb-5" id="notrehistoire">
             <div class="col-12 col-md-6 col-lg-4">
-               <h2 class="display-5 fw-bold mb-2 text-light">Notre Histoire</h2>
-               <p class="fw-bold text-light mt-5 ">Né au Sénégal en 2011, AfriTalent a pour mission de briser les frontières géographiques pour le talent tech africain.</p>
+               <h2 class="display-5 fw-bold mt-5 text-light">Notre Histoire</h2>
+               <p class="fw-bold text-light mt-5 ">Né au Sénégal en 2011, AfriTalent a pour mission de briser les
+                  frontières géographiques pour le talent tech africain.</p>
                <p class="text-light">Nous croyons que l'Afrique est le futur de la technologie mondiale. Notre
                   plateforme offre une infrastructure de confiance pour les échanges commerciaux numériques.</p>
             </div>
@@ -51,7 +58,7 @@
       </div>
    </section>
    <section class="container py-5">
-      <h2 class="text-center mb-5 text-light">Nos Valeurs</h2>
+      <h2 class="text-center mb-5 text-light" id="about">Nos Valeurs</h2>
 
       <div class="row g-4 text-center">
 
@@ -91,51 +98,126 @@
                </div>
             </div>
          </div>
+         <div class="col-md-6 col-lg-3">
+            <div class="card h-100 rounded-4"id="backcarte">
+               <div class="card-body">
+                  <div class="mb-3">
+                     <img src="Images/postuler.jpg" alt="" width="220px" height="150px" class="rounded-4">
+                  </div>
+                  <h5 class="card-title text-primary">Excellence</h5>
+                  <p class="card-text text-light fw-bold">Nous visons la plus haute qualité dans chaque détail pour garantir
+                     votre satisfaction.</p>
+               </div>
+            </div>
+         </div>
       </div>
    </section>
    <section class="mt-5 pt-5">
-      <h2 class="text-center mt-4 mb-5 pb-5 text-light">Notre Equipe</h2>
+      <h2 class=" text-light" id="about1">Notre Equipe</h2>
       <div class="container my-5 py-5 ">
          <div class="row g-5">
             <div class="col-12 col-md-6 col-lg-3">
                <div class="card h-100 rounded-4" id="backcarte">
-                  <img src="Images/Avis1.jpeg" alt=""  id="Notre" class="ms-2" width="220px" height="250px">
+                  <img src="Images/Avis1.jpeg" alt="" id="Notre" class=" d-block mx-auto mt-2" width="220px"
+                     height="250px">
                   <div class="card-body text-center">
                      <h5 class="fw-bold text-light">Papa Ibou Jackson</h5>
-                     <h5 class="carteVert fw-bold">Directeur General</h5>
+                     <h5 class="carteVert fw-bold fs-6">Ingenieur IA</h5>
+                     <div class="mt-3" id="reseauequipe">
+                        <a href="https://fr.linkedin.com/" class="text-light me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://x.com/?lang=fr" class="text-light me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com" class="text-light"><i class="fa-brands fa-github"></i></a>
+                     </div>
                   </div>
+
                </div>
             </div>
             <div class="col-md-6 col-lg-3">
                <div class="card h-100 rounded-4" id="backcarte">
-                  <img src="Images/F6.png" alt="" id="Notre" class="ms-2" width="220px" height="250px">
+                  <img src="Images/F6.png" alt="" id="Notre" class="d-block mx-auto mt-2" width="220px" height="250px">
                   <div class="card-body text-center">
                      <h5 class="fw-bold text-light">Marie Mbobutu</h5>
-                     <h5 class="carteVert fw-bold">Secretaire Géneral</h5>
+                     <h5 class="carteVert fw-bold fs-6">Secretaire Géneral</h5>
+                     <div class="mt-3" id="reseauequipe">
+                        <a href="https://fr.linkedin.com/" class="text-light me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://x.com/?lang=fr" class="text-light me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com" class="text-light"><i class="fa-brands fa-github"></i></a>
+                     </div>
                   </div>
                </div>
             </div>
             <div class="col-md-6 col-lg-3">
                <div class="card h-100 rounded-4" id="backcarte">
-                  <img src="Images/F9.jpeg" alt="" id="Notre" class="ms-2" width="220px" height="250px">
+                  <img src="Images/F9.jpeg" alt="" id="Notre" class="d-block mx-auto mt-2" width="220px" height="250px">
                   <div class="card-body text-center">
                      <h5 class="fw-bold text-light">Dani Lookman</h5>
-                     <h5 class="carteVert fw-bold">Chef de projet digital</h5>
+                     <h5 class="carteVert fw-bold fs-6">Chef de projet digital</h5>
+                     <div class="mt-3"id="reseauequipe">
+                        <a href="https://fr.linkedin.com/" class="text-light me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://x.com/?lang=fr" class="text-light me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com" class="text-light"><i class="fa-brands fa-github"></i></a>
+                     </div>
                   </div>
                </div>
             </div>
             <div class="col-md-6 col-lg-3">
                <div class="card h-100 rounded-5" id="backcarte">
-                  <img src="Images/F4.png" alt="" id="Notre" class="ms-2" width="220px" height="250px">
+                  <img src="Images/F4.png" alt="" id="Notre" class="d-block mx-auto mt-2" width="220px" height="250px">
                   <div class="card-body text-center">
                      <h5 class="fw-bold text-light">Josephine Ndeki</h5>
-                     <h5 class="carteVert fw-bold">Directrice Financier</h5>
+                     <h5 class="carteVert fw-bold fs-6">Directrice Financier</h5>
+                     <div class="mt-3" id="reseauequipe">
+                        <a href="https://fr.linkedin.com/" class="text-light me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://x.com/?lang=fr" class="text-light me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com" class="text-light"><i class="fa-brands fa-github"></i></a>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </section>
+ <section class="py-5">
+  <div class="container">
+    <h3 class="text-center fw-bold mb-5 text-light" id="about" > Chiffres clés</h3>
+
+    <div class="Commentçamarche" id="stat12">
+
+      <div class="card1 border border-4 stat2 " id="stat1">
+        <div class="lesicons" id="carte1C">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <p class="text-light">Freelances</p>
+        <h3 class="text-light fw-bold compteur" data-target="500">800</h3>
+      </div>
+
+      <div class="card1 border border-4 stat2" id="stat2">
+        <div class="lesicons" id="carte2C">
+          <i class="fa-solid fa-building"></i>
+        </div>
+        <p class="text-light">Partenaire</p>
+        <h3 class="text-light fw-bold compteur" data-target="600">700+</h3>
+      </div>
+
+      <div class="card1 border border-4 stat2" id="stat3">
+        <div class="lesicons" id="carte3C">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <p class="text-light">Projet réalisés</p>
+        <h3 class="text-light fw-bold compteur" data-target="800">900+</h3>
+      </div>
+
+      <div class="card1 border border-4 stat2" id="stat4">
+        <div class="lesicons" id="carte4C">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <p class="text-light">Pays</p>
+        <h3 class="text-light fw-bold compteur" data-target="20">78+</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
    <script src="Js/main.js"></script>
 

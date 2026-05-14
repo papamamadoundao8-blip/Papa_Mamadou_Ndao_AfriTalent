@@ -29,20 +29,24 @@
                      <li><a class="nav-link" href="about.html">A propos</a></li>
                      <li><a class="nav-link" href="contact.html">Contact</a></li>
                      <li><a class="buttonR btn btn-primary" href="">Rejoindre AfriTalent</a></li>
+                     <li class="nav-item d-flex align-items-center btn btn-dark ms-3" id="noiretblanc">
+                        <i class="fa-solid fa-moon" id="NOIRBLANC" style="font-size: 25px;"></i>
+                     </li>
                   </ul>
-                  
+
                </div>
             </div>
          </nav>
       </header>
-
       <main>
+   <!-- Cette partie ci dessous indique la page d'acceuil de notre site pour les developpeur freelances AfriTalent -->
+         <button id="retourverslehaut">Retour en haut</button>   
          <section class="acceuil">
             <div class="backAcceuil">
-               <div class="display-6  fw-bold text-dark" id="texte">
-                  Bienvenue à <span class="afritalent"> AfriTalent</span> l'Elite du <br> Développement web en
+               <div class="display-6  fw-bold" id="texte">
+                  Bienvenue à <span class="text-primary"> AfriTalent</span> l'Elite du <br> Développement web en
                   Afrique. <br>
-                  Avec <span class="afritalent"> AfriTalent</span>, on propulse vos <br> idées au niveau supérieur.
+                  Avec <span class="text-primary"> AfriTalent</span>, on propulse vos <br> idées au niveau supérieur.
                   <div class="BUTTONACCEUIL">
                      <button class="button">Je suis Freelance</button>
                      <button class="button2">Je cherche un Freelance</button>
@@ -57,7 +61,7 @@
                         <p class="ppp fw-bold">Entreprise</p>
                      </div>
                      <div>
-                        <h3 class="text-primary fw-bold">100+</h3>
+                        <h3 class="text-primary fw-bold">800+</h3>
                         <p class="ppp fw-bold">Missions</p>
                      </div>
                   </div>
@@ -67,48 +71,48 @@
                </div>
             </div>
          </section>
-
       </main>
    </div>
-
+<!-- Dans cette section ci dessous nous avons la partie comment ça marche en bento grig afin de faciliter à l'utilisateur son inscription afin de lui montrer les etapes à suivre  -->
    <section class="py-5 mb-5">
-      <div class="container">
+      <div class="container" id="çamarche">
          <h3 class="text-center fw-bold mb-5 pb-3 mt-5 text-light" id="Titre">Comment ça marche ?</h3>
-         <div class="Commentçamarche">
-            <div class="card1" id="carte1">
+         <div class="Commentçamarche" >
+            <div class="card1 border border-4" id="carte1">
                <div class="lesicons " id="carte1C">
                   <i class="fa-solid fa-id-card"></i>
                </div>
-               <h3 class="text-light fw-bold">Inscrivez-vous</h3>
+               <h3 class="text-light fw-bold"><span class="badge bg-primary rounded-5 me-2">1</span>Inscrivez-vous</h3>
                <p class="text-light">Créez votre profil en quelques minutes et rejoignez notre communauté.</p>
             </div>
 
-            <div class="card1" id="carte2">
+            <div class="card1 border border-4" id="carte2">
                <div class="lesicons" id="carte2C">
                   <i class="fa-solid fa-file-circle-check"></i>
                </div>
-               <h3 class="text-light fw-bold">Postuler</h3>
+               <h3 class="text-light fw-bold"><span class="badge bg-primary rounded-5 me-2">2</span>Postuler</h3>
                <p class="text-light">Trouvez des missions qui correspondent à votre expertise.</p>
             </div>
 
-            <div class="card1" id="carte3">
+            <div class="card1 border border-4" id="carte3">
                <div class="lesicons" id="carte3C">
                   <i class="fa-solid fa-laptop-code"></i>
                </div>
-               <h3 class="text-light fw-bold">Travailler</h3>
+               <h3 class="text-light fw-bold"><span class="badge bg-primary rounded-5 me-2">3</span>Travailler</h3>
                <p class="text-light">Gérez vos projets via notre interface dédiée.</p>
             </div>
 
-            <div class="card1" id="carte4">
+            <div class="card1 border border-4" id="carte4">
                <div class="lesicons" id="carte4C">
                   <i class="fa-solid fa-trophy"></i>
                </div>
-               <h3 class="text-light fw-bold">Réussissez</h3>
+               <h3 class="text-light fw-bold"><span class="badge bg-primary rounded-5 me-2">4</span>Réussissez</h3>
                <p class="text-light">Développez votre réseau, vos compétences et augmentez vos revenus.</p>
             </div>
          </div>
       </div>
    </section>
+<!-- Dans cette partie nous avons les Catégories de services que proposent AfriTalent  -->
    <section class="py-5 " id="Catégories">
       <div class="container">
          <h2 class="text-center text-light" id="Titre1">Catégories de services</h2>
@@ -120,8 +124,7 @@
                      <h5 class="card-title text-primary fw-bold">Développement Web</h5>
                      <p class="card-text text-light">Nous concevons des sites vitrines, des plateformes e-commerce et
                         des applications SaaS sur mesure.</p>
-                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">78
-                           Freelances</a></button>
+                     <a href="" class=" btn btn-primary rounded-5 text-light">78 Freelances</a>
                   </div>
                </div>
             </div>
@@ -134,8 +137,7 @@
                      <p class="card-text text-light small">Nous nous chargeons de créer des interfaces intuitives et
                         captivantes qui renforcent l'identité de
                         votre marque.</p>
-                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">100
-                           Freelances</a></button>
+                     <a href="" class="btn btn-primary rounded-5  text-light">100 Freelances</a>
                   </div>
                </div>
             </div>
@@ -148,8 +150,7 @@
                      <p class="card-text text-light small">De la stratégie de contenu à l'acquisition payante, nous
                         déployons
                         des campagnes pour maximiser votre retour sur investissement.</p>
-                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">46
-                           Freelances</a></button>
+                     <a href="" class="btn btn-primary rounded-5  text-light">46 Freelances</a>
                   </div>
                </div>
             </div>
@@ -162,8 +163,7 @@
                         tendances
                         et automatiser vos processus. Nous intégrons des modèles d'IA pour donner un temps
                         d'avance à votre entreprise.</p>
-                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">50
-                           Freelances</a></button>
+                     <a href="" class="btn btn-primary rounded-5  text-light">50 Freelances</a>
                   </div>
                </div>
             </div>
@@ -175,8 +175,7 @@
                      <p class="card-text text-light"> Nous
                         rédigeons des articles de blog, des documentations d'API et des livres blancs qui valorisent
                         votre expertise tout en restant accessibles à vos cibles.</p>
-                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">200
-                           Freelances</a></button>
+                     <a href="" class="btn btn-primary rounded-5  text-light">200 Freelances</a></button>
                   </div>
                </div>
             </div>
@@ -188,14 +187,13 @@
                      <p class="card-text text-light small">Accélérez vos cycles de déploiement et garantissez la haute
                         disponibilité de vos services. Nous optimisons vos architectures Cloud pour réduire vos coûts et
                         assurer une résilience totale face à la montée en charge.</p>
-                     <button class="rounded-5 bg-primary p-2 border border-primary"><a href="" class="text-light">30
-                           Freelances</a></button>
+                     <a href="" class="btn btn-primary rounded-5  text-light">30 Freelances</a></button>
                   </div>
                </div>
             </div>
          </div>
    </section>
-
+<!-- Dans cette section nous avons les avis de nos client en carousel(bootstrap) -->
    <section class="py-5 ">
       <div class="container">
          <h4 class="text-center mb-5 "><span class="border border-primary rounded-5 p-2 text-light" id="Titre2"
@@ -206,7 +204,7 @@
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="row justify-content-center">
-                     <div class="col-lg-6">
+                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card p-1 rounded-5 h-100">
                            <div class="d-flex justify-content-center mt-3 ">
                               <img src="Images/Avis1.jpeg" alt="" width="200px" height="200px" class="rounded-5">
@@ -227,7 +225,7 @@
                </div>
                <div class="carousel-item">
                   <div class="row justify-content-center">
-                     <div class="col-lg-6 ">
+                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card p-1 rounded-5 h-100">
                            <div class="d-flex justify-content-center mt-3">
                               <img src="Images/Avis2.jpeg" alt="" width="200px" height="200px" class="rounded-5">
@@ -249,7 +247,7 @@
                </div>
                <div class="carousel-item">
                   <div class="row justify-content-center">
-                     <div class="col-lg-6">
+                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card  rounded-5 h-100">
                            <div class="d-flex justify-content-center mt-3">
                               <img src="Images/Avis3.jpeg" alt="" width="200px" height="200px" class="rounded-5">
@@ -270,14 +268,14 @@
                   </div>
                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControlsNoTouching"
                data-bs-slide="prev">
                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-               data-bs-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               data-bs-slide="next" >
+               <span class="carousel-control-next-icon" aria-hidden="true" ></span>
                <span class="visually-hidden">Next</span>
             </button>
          </div>
@@ -289,11 +287,11 @@
       <div class="AAA">
          <div>
             <h2 class="text-light ms-3" id="rejoignez">
-               Rejoignez Afritalent <br> Propulsez votre projet digital avec un développement sur mesure.
+               Rejoignez Afritalent <br>Propulsez votre projet digital avec un développement sur mesure.
             </h2>
             <div class="mt-5 ms-3 " id="ButtonRT">
-               <button class=" fw-bold text-light " id="bt1"><a href="">Rejoignez AfriTalent</a></button>
-               <button class="text-light fw-bold" id="bt2"><a href="tarifs.html">Tarifs</a></button>
+               <a href="" class="btn btn-primary rounded-5 p-3 ">Rejoignez AfriTalent</a>
+               <a href="tarifs.html" class="btn btn-outline-primary rounded-5 p-3 ">Tarifs</a>
             </div>
          </div>
          <div>
@@ -301,23 +299,78 @@
          </div>
       </div>
    </section>
-
-   <footer class=" bg-dark text-light pt-5 pb-3">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-6 mb-4">
-               <h5>AfriTalent</h5>
-               <p>Connecter l'Afrique au reste du monde.</p>
-            </div>
-            <div class="col-md-6 mb-4">
-               <h6>Contact</h6>
-               <p>Email: www.Afritalent20@.com<br>Tel: +221 77 777 77 77</p>
-            </div>
-         </div>
+<!-- Enfin nous avons le footer en bas de page qui permet egalement de faire une petite desciption du site et egalement faciliter la navigation de l'utilisateuren lui montrant les liens utiles ,les differents services ect-->
+<footer class="pt-5 bg-dark py-5">
+  <div class="container-fluid px-5">
+    <div class="row g-4 mb-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <h5 class="text-white mb-2 fs-5 fw-bold"><span class="text-primary">Afri</span>Talent</h5>
+        <p class="small text-light mb-3">Connecter l'Afrique au reste du monde.</p>
+        <div class="d-flex gap-2" id="reseau">
+          <a href="https://fr.linkedin.com/" class="btn bg-white"><i class="fab fa-linkedin-in text-primary"></i></a>
+          <a href="#" class="btn btn-sm bg-white"><i class="fab fa-x-twitter text-black"></i></a>
+          <a href="#" class="btn btn-sm bg-white"><i class="fab fa-facebook-f text-primary"></i></a>
+          <a href="#" class="btn btn-sm bg-white"><i class="fab fa-instagram text-primary"></i></a>
+          <a href="#" class="btn btn-sm bg-white"><i class="fab fa-youtube text-danger"></i></a>
+        </div>
       </div>
-   </footer>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <h6 class="text-light mb-3 fs-5 fw-bold">Liens utiles</h6>
+        <ul class="services" style="list-style:none; padding:0;">
+          <li class="mb-2"><a href="about.html">À propos de nous</a></li>
+          <li class="mb-2"><a href="#çamarche">Comment ça marche</a></li>
+          <li class="mb-2"><a href="freelances.html">Trouver un freelance</a></li>
+          <li class="mb-2"><a href="index.html">Poster une mission</a></li>
+          <li class="mb-2"><a href="tarifs.html">Nos tarifs</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <h6 class="text-light mb-3 fs-5 fw-bold">Nos services</h6>
+        <ul class="services p-1" type="none">
+          <li class="mb-2">Développement Web</li>
+          <li class="mb-2">Design UI/UX</li>
+          <li class="mb-2">Marketing Digital</li>
+          <li class="mb-2">Data & IA</li>
+          <li class="mb-2">Rédaction Tech</li>
+          <li class="mb-2">DevOps & Cloud</li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <h6 class="text-white mb-3">Contact</h6>
+        <ul class="services p-1">
+          <li class="mb-2 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-envelope text-primary"></i>
+            <span style="color:#8b9ab5;">contact@afritalent.com</span>
+          </li>
+          <li class="mb-2 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-phone text-primary"></i>
+            <span style="color:#8b9ab5;">+221 77 777 77 77</span>
+          </li>
+          <li class="mb-2 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+            <span style="color:#8b9ab5;">Dakar, Sénégal</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container-fluid border-top  pt-3 d-flex justify-content-between flex-wrap">
+      <small>
+       <span>2026</span> <span class="text-primary fw-bold">AfriTalent</span>. Tous droits réservés.
+      </small>
+      <div class="d-flex gap-3" id="foot">
+        <p>Confidentialité</p>
+        <p>Conditions d'utilisation</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
    <script src="Js/main.js"></script>
 </body>
-
 </html>
