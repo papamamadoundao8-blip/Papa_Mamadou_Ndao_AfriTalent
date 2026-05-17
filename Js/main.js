@@ -10,7 +10,7 @@ NOIRBLANC.addEventListener('click', function () {
         desactiver();
     } else {
         activer();
-        
+
     }
 });
 function activer() {
@@ -47,6 +47,47 @@ window.onscroll = function () {
         retourverslehaut.style.display = "none";
     }
 }
-retourverslehaut.onclick = function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+retourverslehaut.addEventListener('click', function () {
+    window.scrollTo({ top: 0});
+})
+
+let sections = document.querySelectorAll('section, .card, .card1');
+sections.forEach(function(s) {
+    s.classList.add('fondu');
+});
+let messection = new IntersectionObserver(function(m) {
+    m.forEach(function(sect) {
+    if (sect.isIntersecting) {
+        sect.target.classList.add('fondre');
+        messection.unobserve(sect.target);
+        }
+});
+}, { threshold: 0.25 });
+sections.forEach(function(s) {
+messection.observe(s);
+});
+
+let stats = document.querySelectorAll('.stat h3');
+let stat = document.querySelectorAll('.stat2 h3');
+let chiffre = new IntersectionObserver(function (compter) {
+compter.forEach(function (numero) {
+if (numero.isIntersecting) {
+    let s = numero.target;
+    let valeurF = parseInt(s.textContent);
+    let valeurI = 0;
+    let compteur = setInterval(function () {
+        valeurI += 1;
+        s.textContent = valeurI + '+';
+if (valeurI >= valeurF) {
+    s.textContent = valeurF + '+';
 }
+},10);chiffre.unobserve(s);
+}
+});
+});
+stats.forEach(function (s) {
+    chiffre.observe(s);
+});
+stat.forEach(function (s) {
+    chiffre.observe(s);
+});
