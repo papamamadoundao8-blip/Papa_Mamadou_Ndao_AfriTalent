@@ -91,3 +91,113 @@ stats.forEach(function (s) {
 stat.forEach(function (s) {
     chiffre.observe(s);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+let cartes = document.querySelectorAll("#cartefreelance > .col-12");
+if (cartes.length > 0) {
+    cartes[0].dataset.freelance = "devellopeur";
+    cartes[1].dataset.freelance = "data";
+    cartes[2].dataset.freelance = "devellopeur";
+    cartes[3].dataset.freelance = "marketing";
+    cartes[4].dataset.freelance = "design";
+    cartes[5].dataset.freelance = "devellopeur";
+    cartes[6].dataset.freelance = "design";
+    cartes[7].dataset.freelance = "data";
+    cartes[8].dataset.freelance = "marketing";
+
+let boutons = document.querySelectorAll("#buttonfreelance > button");
+    boutons.forEach(function (boutonF) {
+    boutonF.addEventListener("click", function () {
+    let texte = boutonF.textContent;
+    cartes.forEach(function (carte) {
+        if (texte === "Tout") {
+            carte.style.display = "block";
+        } 
+        else if (texte === "Développeur Web" && carte.dataset.freelance === "devellopeur") {
+            carte.style.display = "block";
+        } 
+        else if (texte === "Design" && carte.dataset.freelance === "design") {
+            carte.style.display = "block";
+        }
+        else if (texte === "Marketing" && carte.dataset.freelance === "marketing") {
+             carte.style.display = "block";
+        }
+        else if (texte === "Data & IA" && carte.dataset.freelance === "data") {
+             carte.style.display = "block";
+        }
+        else {
+             carte.style.display = "none";
+        }
+                });
+            });
+        });
+    }
+});
+
+document.getElementById("btnEnvoyer").addEventListener("click", function(cliquer) {
+  cliquer.preventDefault();
+let nom     = document.querySelector('input[placeholder="Votre nom"]').value;
+let prenom  = document.querySelector('input[placeholder="Votre prénom"]').value;
+let email   = document.querySelector('input[type="email"]').value;
+let regexEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+/;
+let sujet   = document.querySelector('select').value;
+let message = document.querySelector('textarea').value;
+
+if (nom === "") {
+    afficherErreur('input[placeholder="Votre nom"]', "Veuillez donner votre nom ");
+    return;
+  }
+if (prenom === "") {
+    afficherErreur('input[placeholder="Votre prénom"]', "Veuillez donner votre prénom ");
+    return;
+  }
+if (email === "" || !regexEmail.test(email)) {
+    afficherErreur('input[type="email"]', "Veuillez donner votre email ");
+    return;
+  }
+if (sujet === "") {
+    afficherErreur('select', "Veuillez sélectionner un sujet");
+    return;
+  }
+if (message.length < 20) {
+    afficherErreur('textarea', "Minimum 20 caractères !");
+    return;
+  }
+else{
+    afficherSucces();
+    enlever();
+    document.querySelector("form").reset();
+}
+});
+
+function afficherErreur(selecteur,texte) {
+  let champ = document.querySelector(selecteur);
+  let dejala = champ.parentNode.querySelector(".erreur");
+  if (dejala) dejala.remove();
+  let erreur = document.createElement("p");
+  erreur.textContent     = texte;
+  erreur.className = "erreur";
+  erreur.style.color     = "red";
+  erreur.style.fontSize  = "13px";
+  erreur.style.marginTop = "4px";
+  champ.insertAdjacentElement("afterend", erreur);
+}
+
+function enlever() {
+  document.querySelectorAll(".erreur")
+  .forEach(function(supprimer) {
+    supprimer.remove();
+  });
+}
+function afficherSucces() {
+  let succes = document.createElement("div");
+  succes.textContent        = "Message envoyé";
+  succes.style.background   = "#06f83f";
+  succes.style.color="#0a0a0a"
+  succes.style.fontSize     = "20px";
+  succes.style.padding      = "15px";
+  succes.style.borderRadius = "30px";
+  succes.style.marginTop    = "15px";
+  succes.style.textAlign    = "center";
+  document.querySelector("form").insertAdjacentElement("afterend", succes);
+}
