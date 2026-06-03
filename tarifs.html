@@ -7,12 +7,12 @@
    <title>AfriTalent — Tarifs</title>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="Css/style.css">
 </head>
 
-<body class="index">
+<body class="backTarif">
    <header>
       <nav class="navbar navbar-expand-lg  fixed-top mb-1">
          <div class="container-fluid">
@@ -23,17 +23,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav ms-auto text-end">
-                  <li><a class="nav-link " href="index.html">Accueil</a></li>
-                  <li><a class="nav-link" href="freelances.html">Freelances</a></li>
-                  <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                  <li><a class="nav-link" href="about.html">A propos</a></li>
-                  <li><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li><a class="nav-link text-light fw-bold" href="index.html">Accueil</a></li>
+                  <li><a class="nav-link text-light fw-bold" href="freelances.html">Freelances</a></li>
+                  <li><a class="nav-link text-light fw-bold" href="tarifs.html">Tarifs</a></li>
+                  <li><a class="nav-link text-light fw-bold" href="about.html">A propos</a></li>
+                  <li><a class="nav-link text-light fw-bold" href="contact.html">Contact</a></li>
                   <li><a class="buttonR btn btn-primary" href="">Rejoindre AfriTalent</a></li>
-                   <li class="nav-item d-flex align-items-center btn btn-dark ms-3" id="noiretblanc">
-                        <i class="fa-solid fa-moon" id="NOIRBLANC" style="font-size: 25px;"></i>
-                     </li>
+                  <li>
+                     <button class="btn btn-dark rounded-5 ms-3" id="noiretblanc">
+                        <i class="fa-solid fa-moon" id="NOIRBLANC"></i>
+                     </button>
+                  </li>
                </ul>
-
             </div>
          </div>
       </nav>
@@ -41,63 +42,61 @@
 
    <main class="mt-5 pt-5">
       <div class="container py-5 text-center">
-         <h2 class="display-5  mb-4 mt-1 fw-bold text-light">Nos Tarifs</h2>
+         <h1 class=" pb-5 fw-bold text-light nostarif">Nos Tarifs</h1>
 
          <div class="row g-4 justify-content-center mb-5">
-            <div class="col-12, col-md-6, col-lg-4">
-               <div class="card h-100 p-4 border-2 border-primary pb-5 rounded-5" id="backcarte">
-                  <h2 class="text-primary fw-bold">Gratuit</h2>
-                  <h2 class="display-5 fw-bold text-primary fs-8">0€<span class="fs-6  fw-bold">/mois</span></h2>
-                  <ul class="pt-5 text-start" type="none">
+            <div class="col-12 col-md-6 col-lg-4">
+               <div class="card h-100 p-4 border-2 border-primary pb-5 rounded-5 backcarte">
+                  <h2 class="fw-bold Gratuit fs-1">Gratuit</h2>
+                  <h3 class="Gratuit fw-bold">Débutant</h3>
+                  <h2 class="display-5 fw-bold fs-8 Gratuit">0€<span class="fs-6 fw-bold Gratuit">/mois</span></h2>
+                  <ul class="pt-5 text-start">
                      <li class="text-light"> Création de profil</li>
                      <li class="text-light"> Postuler à 5 missions/mois</li>
                      <li class="text-light"> Support prioritaire</li>
                   </ul>
-                  <button
-                     class=" text-light border border-primary p-2 rounded-4 mt-5 bg-primary text-light fw-bold">Commencez
-                     gratuitement</button>
+                  <button class=" mt-5 text-light fw-bold bouttonGratuit">Commencez gratuitement</button>
                </div>
             </div>
 
-            <div class="col-12, col-md-6, col-lg-4">
-               <div class="card h-100 p-4 border-4 border-success rounded-5" id="backcarte">
-                  <h2 class=" badge bg-success text-light fw-bold p-3 text-center fs-6" id="pop">POPULAIRE</h2>
-                  <h3 class="text-success">Pro</h3>
-                  <h2 class="display-4 fw-bold text-success">29€<span class="fs-6 fw-bold">/mois</span></h2>
-                  <ul class="text-start" type="none">
+            <div class="col-12 col-md-6 col-lg-4">
+               <div class="card h-100 p-4 border-4 border-success rounded-5 backcarte">
+                  <h2 class=" fw-bold text-center populaire">Populaire</h2>
+                  <h3 class="populaire mt-0">Pro</h3>
+                  <h2 class="display-4 fw-bold populaire">29€<span class="fs-6 fw-bold populaire">/mois</span></h2>
+                  <ul class="text-start pt-4">
                      <li class=" me-2 text-light"> Missions illimitées</li>
                      <li class=" me-2 text-light"> Badge "Expert Vérifié"</li>
                      <li class=" me-2 text-light"> Paiement garanti</li>
                   </ul>
-                  <button class="text-light bg-success border-2 border-success p-2 fw-bold fs-6 rounded-4 mt-5">Choisir
-                     la Pro</button>
+                  <button class="text-light fw-bold mt-5 bouttonPro">Choisir la Pro</button>
                </div>
             </div>
 
-            <div class="col-12, col-md-6, col-lg-4">
-               <div class="card h-100 p-4 border-3 border-primary rounded-5" id="backcarte">
-                  <h3 class="text-primary">Entreprise</h3>
-                  <h2 class="display-4 fw-bold text-primary ">99€<span class="fs-6 text-primary fw-bold">/mois</span>
+            <div class="col-12 col-md-6 col-lg-4">
+               <div class="card h-100 p-4 border-3 border-primary rounded-5 backcarte">
+                  <h3 class="Gratuit fw-bold fs-1">Entreprise</h3>
+                  <h3 class="Gratuit fw-bold">Expert</h3>
+                  <h2 class="display-4 fw-bold Gratuit ">99€<span class="fs-6 fw-bold Gratuit">/mois</span>
                   </h2>
-                  <ul class="text-start mt-4 p-4" type="none">
+                  <ul class="text-start mt-4 p-4">
                      <li class=" me-2 text-light"> Accès au Top 1% talents</li>
                      <li class=" me-2 text-light"> Account Manager dédié</li>
                      <li class=" me-2 text-light"> Badge "Expert Vérifié"</li>
                   </ul>
-                  <button class="bg-primary text-light border border-primary p-2 rounded-4 mt-4">Contactez-nous</button>
+                  <button class="text-light fw-bold  bouttonGratuit">Contactez-nous</button>
                </div>
             </div>
          </div>
       </div>
 
       <div class="container mb-5">
-         <h2 class="text-center text-light fw-bold pb-5">QUESTIONS ?</h2>
+         <h2 class="text-center text-light fw-bold pb-5 nostarif">QUESTIONS ?</h2>
          <div class="accordion accordion-flush " id="accordionFlushExample">
             <div class="accordion-item">
                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
-                     id="accordion">
+                  <button class="accordion-button collapsed accordion" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                      <span class="text-light">Comment AfriTalent garantit-il la compétence des développeurs ?</span>
                   </button>
                </h2>
@@ -108,9 +107,8 @@
                </div>
                <div class="accordion-item">
                   <h2 class="accordion-header">
-                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
-                        id="accordion">
+                     <button class="accordion-button collapsed accordion" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                         <span class="text-light">Comment fonctionne le paiement pour un projet ?</span>
                      </button>
                   </h2>
@@ -122,9 +120,9 @@
                   </div>
                   <div class="accordion-item">
                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button collapsed accordion" type="button" data-bs-toggle="collapse"
                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                           aria-controls="flush-collapseThree" id="accordion">
+                           aria-controls="flush-collapseThree">
                            <span class="text-light">Quels sont les frais de service de la plateforme ?</span>
                         </button>
                      </h2>
@@ -137,14 +135,13 @@
                      </div>
                      <div class="accordion-item">
                         <h2 class="accordion-header">
-                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#flush-collapseThree" aria-expanded="false"
-                              aria-controls="flush-collapseThree" id="accordion">
+                           <button class="accordion-button collapsed accordion" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
                               <span class="text-light"> Puis-je recruter un développeur pour une mission longue durée
                                  ?</span>
                            </button>
                         </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        <div id="flush-collapse4" class="accordion-collapse collapse"
                            data-bs-parent="#accordionFlushExample">
                            <div class="accordion-body">Oui, vous pouvez proposer des missions ponctuelles ou des
                               contrats à long terme. Nous facilitons la mise en relation selon vos besoins spécifiques.
@@ -152,14 +149,14 @@
                         </div>
                         <div class="accordion-item">
                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                 aria-controls="flush-collapseThree" id="accordion">
+                              <button class="accordion-button collapsed accordion" type="button"
+                                 data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false"
+                                 aria-controls="flush-collapse5">
                                  <span class="text-light">Que se passe-t-il en cas de litige entre un client et un
                                     freelance ?</span>
                               </button>
                            </h2>
-                           <div id="flush-collapseThree" class="accordion-collapse collapse"
+                           <div id="flush-collapse5" class="accordion-collapse collapse"
                               data-bs-parent="#accordionFlushExample">
                               <div class="accordion-body fw-bold">En cas de désaccord, l'équipe de médiation
                                  d'AfriTalent intervient pour analyser les livrables et trouver une solution équitable

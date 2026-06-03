@@ -4,11 +4,11 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+   <title>Contact afritalent</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    <link rel="stylesheet" href="Css/style.css">
 </head>
 
@@ -23,58 +23,53 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav ms-auto text-end">
-                  <li><a class="nav-link " href="index.html">Accueil</a></li>
-                  <li><a class="nav-link" href="freelances.html">Freelances</a></li>
-                  <li><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                  <li><a class="nav-link" href="about.html">A propos</a></li>
-                  <li><a class="nav-link" href="contact.html">Contact</a></li>
-                  <li><a class="buttonR btn btn-primary" href="">Rejoindre AfriTalent</a></li>
-                   <li class="nav-item d-flex align-items-center btn btn-dark ms-3" id="noiretblanc">
-                        <i class="fa-solid fa-moon" id="NOIRBLANC" style="font-size: 25px;"></i>
-                     </li>
+                  <li><a class="nav-link text-light fw-bold " href="index.html">Accueil</a></li>
+                  <li><a class="nav-link text-light fw-bold" href="freelances.html">Freelances</a></li>
+                  <li><a class="nav-link text-light fw-bold " href="tarifs.html">Tarifs</a></li>
+                  <li><a class="nav-link text-light fw-bold" href="about.html">A propos</a></li>
+                  <li><a class="nav-link text-light fw-bold" href="contact.html">Contact</a></li>
+                  <li><a class="buttonR btn btn-primary fw-bold" href="">Rejoindre AfriTalent</a></li>
+                  <li>
+                     <button class="btn btn-dark rounded-5 ms-3" id="noiretblanc">
+                        <i class="fa-solid fa-moon" id="NOIRBLANC"></i>
+                     </button>
+                  </li>
                </ul>
 
             </div>
          </div>
       </nav>
    </header>
- <button id="retourverslehaut">Retour en haut</button>
+   <button id="retourverslehaut">Retour en haut</button>
    <main class="dContact">
-      <div class="contacts">
-         <div class="contact-form mt-5 pt-5">
-            <h2 class="text-light">Envoyez un message</h2>
+      <div class="container-fluid contacts">
+         <div class="mescontact mt-5 pt-5">
+            <h1 class="text-light">Envoyez un message</h1>
             <form>
                <div class="group">
-                  <label for="last-name">Nom</label>
-                  <input type="text" id="last-name" name="last-name" placeholder="Votre nom" class="bg-dark">
-
+                  <label for="nom">Nom</label>
+                  <input type="text" id="nom" name="last-name" placeholder="Votre nom">
                </div>
-
                <div class="group">
-                  <label for="first-name">Prénom</label>
-                  <input type="text" placeholder="Votre prénom" class="bg-dark">
-
+                  <label for="prenom">Prénom</label>
+                  <input type="text" id="prenom" placeholder="Votre prénom">
                </div>
-
                <div class="group">
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="Donnez votre email" class="bg-dark">
-
+                  <input type="email" id="email" name="email" placeholder="Donnez votre email">
                </div>
-
                <div class="group">
                   <label for="subject">Sujet</label>
-                  <select id="subject" name="subject" class="bg-dark">
+                  <select id="subject" name="subject">
                      <option value="" class="text-light">Sélectionnez un sujet</option>
                      <option value="support">Je suis freelance</option>
                      <option value="sales">Je cherche un freelance</option>
                      <option value="other">Autre</option>
                   </select>
                </div>
-
                <div class="group">
                   <label for="message">Message</label>
-                  <textarea id="" name="" placeholder="Minimum 20 caractéres" class="bg-dark"></textarea>
+                  <textarea id="message" name="message" placeholder="Minimum 20 caractéres"></textarea>
                </div>
                <div class="d-flex justify-content-center gap-4">
                   <button type="submit" class="btn btn-primary" id="btnEnvoyer">Envoyer</button>
@@ -82,10 +77,9 @@
                </div>
             </form>
          </div>
-
          <div class="mt-5 pt-5">
             <div>
-               <h3 class="text-light">Nos coordonnées</h3>
+               <h2 class="text-light">Nos coordonnées</h2>
                <p class="text-light"><strong>Email :</strong> contact@AfriTalent.com</p>
                <p class="text-light"><strong>Téléphone :</strong> +223 123 45 67</p>
                <p class="text-light"><strong>Adresse :</strong> 14 Rue Mobutu Maduéké, 65000 Yamoussouko</p>
@@ -94,10 +88,11 @@
             <div>
                <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14595.7478332501!2d-17.450970235227974!3d14.700131441579636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2ssn!4v1776953668284!5m2!1sfr!2ssn"
-                  width="100%" height="250" class="border-2 border-dark">
+                  style="width: 100%;" height="250" class="border-2 border-dark">
                </iframe>
             </div>
          </div>
+      </div>
    </main>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
    <script src="Js/main.js"></script>
